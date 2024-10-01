@@ -1,8 +1,8 @@
 ---
-title: QoQCoT_v5_Docker
+title: qoqcot_v5_docker
 description: 
 published: true
-date: 2024-10-01T18:56:34.578Z
+date: 2024-10-01T18:57:00.509Z
 tags: 
 editor: markdown
 dateCreated: 2024-09-29T10:09:07.123Z

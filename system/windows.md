@@ -1,8 +1,8 @@
 ---
-title: windows_server
+title: windows
 description: 
 published: true
-date: 2024-10-01T19:42:44.128Z
+date: 2024-10-01T20:07:53.200Z
 tags: 
 editor: markdown
 dateCreated: 2024-09-27T19:51:36.824Z

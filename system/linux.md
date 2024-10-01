@@ -1,8 +1,8 @@
 ---
-title: linux
+title: home_linux
 description: 
 published: true
-date: 2024-10-01T19:33:42.763Z
+date: 2024-10-01T19:48:38.488Z
 tags: 
 editor: markdown
 dateCreated: 2024-09-27T19:52:14.031Z

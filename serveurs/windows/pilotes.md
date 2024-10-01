@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-01T10:13:34.402Z
+date: 2024-10-01T10:17:29.658Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -14,9 +14,9 @@ Liste des pilotes manquant sous Windows 11 23h2
 > <button id="downloadCSV">Export table to CSV</button> :floppy_disk:
 {.is-info}
 
-| MODEL | NAME | ID | DRIVER | DDL | HQ |
-|-------|-----|----|--------|-----|----|
-| OptiPlex 3000 | Acquisition de données PCI et contrôleur de traitement du signal | PCI\VEN_8086&DEV_461D&SUBSYS_0AC51028&REV_05\3&11583659&0&20 | [Intel - System - 1.0.11406.42226](https://catalog.update.microsoft.com/Search.aspx?q=PCI%5CVEN_8086%26DEV_461D) | [:floppy_disk:](https://files.mydedibox.fr/files/work/wiki/pilotes/5080a456-7f3d-4bf2-8f71-13a5bf33d75f_ccae92e0d6f3005e63f4a45cf0943823c3f84ccf.cab) | NON |
+| MODEL | NAME | ID | DRIVER | DDL | MIRROR | HQ |
+|-------|------|----|--------|-----|--------|----|
+| OptiPlex 3000 | Acquisition de données PCI et contrôleur de traitement du signal | PCI\VEN_8086&DEV_461D&SUBSYS_0AC51028&REV_05\3&11583659&0&20 | [Intel - System - 1.0.11406.42226](https://catalog.update.microsoft.com/Search.aspx?q=PCI%5CVEN_8086%26DEV_461D) | [:floppy_disk:](https://catalog.s.download.windowsupdate.com/d/msdownload/update/driver/drvs/2024/02/5080a456-7f3d-4bf2-8f71-13a5bf33d75f_ccae92e0d6f3005e63f4a45cf0943823c3f84ccf.cab) |[:floppy_disk:](https://files.mydedibox.fr/files/work/wiki/pilotes/5080a456-7f3d-4bf2-8f71-13a5bf33d75f_ccae92e0d6f3005e63f4a45cf0943823c3f84ccf.cab) | NON |
 | OptiPlex 3000 | Contrôleur de bus SM | PCI\VEN_8086&DEV_7AA3&SUBSYS_0AC51028&REV_11\3&11583659&0&FC | [INTEL - System - 10.1.37.7](https://catalog.update.microsoft.com/Search.aspx?q=PCI%5CVEN_8086%26DEV_7AA3) | [:floppy_disk:](https://files.mydedibox.fr/files/work/wiki/pilotes/4b8b75db-f86c-40de-a51b-f731b69129a0_d3788d72f83e419edebb61f51f10eb382ac33ff7.cab) | NON |
 | OptiPlex 3000 | Contrôleur PCI de communications simplifiées | PCI\VEN_8086&DEV_7AE8&SUBSYS_0AC51028&REV_11\3&11583659&0&B0 | [Intel - System - 2406.5.5.0](https://catalog.update.microsoft.com/Search.aspx?q=PCI%5CVEN_8086%26DEV_7AE8) | [:floppy_disk:](https://files.mydedibox.fr/files/work/wiki/pilotes/6b4eea96-19d1-4e45-8184-b15e69e7d61b_342c6ed92ad70a59065201bacbef8f85fc8413ca.cab) | NON |
 | OptiPlex 3000 | Contrôleur vidéo (Intel(R) UHD Graphics 710) | PCI\VEN_8086&DEV_4693&SUBSYS_0AC51028&REV_0C\3&11583659&0&10 | [Intel Corporation - Display - 31.0.101.4953](https://catalog.update.microsoft.com/Search.aspx?q=PCI%5CVEN_8086%26DEV_4693%26SUBSYS_0AC51028) | [:floppy_disk:](https://files.mydedibox.fr/files/work/wiki/pilotes/ac12bccd-37d2-4732-bed1-505a14f77085_78cb28c6e0f2b79c109b99e7af335d6ee85fa9dc.cab) | NON |

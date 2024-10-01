@@ -1,8 +1,8 @@
 ---
-title: Infrastructures Systèmes
+title: infrastructure_system
 description: 
 published: true
-date: 2024-10-01T19:05:25.790Z
+date: 2024-10-01T20:30:05.734Z
 tags: 
 editor: markdown
 dateCreated: 2024-09-27T19:54:00.875Z

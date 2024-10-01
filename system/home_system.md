@@ -2,7 +2,7 @@
 title: home_system
 description: 
 published: true
-date: 2024-10-01T19:46:05.902Z
+date: 2024-10-01T20:24:38.707Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-01T19:46:05.901Z
@@ -10,8 +10,8 @@ dateCreated: 2024-10-01T19:46:05.901Z
 
 ## Serveurs Windows
 
-[![windows-logo.png](/serveurs/windows-logo.png)](http://wiki.mydedibox.fr/fr/serveurs/windows)
+[![windows-logo.png](/serveurs/windows-logo.png)](/system/windows/home_windows)
 
 ## Serveurs Linux
 
-[![linux-logo.png](/serveurs/linux-logo.png)](http://wiki.mydedibox.fr/fr/serveurs/linux)
+[![linux-logo.png](/serveurs/linux-logo.png)](/system/linux/home_linux)

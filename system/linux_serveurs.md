@@ -1,8 +1,8 @@
 ---
-title: Linux Serveurs
+title: linux
 description: 
 published: true
-date: 2024-10-01T19:04:01.883Z
+date: 2024-10-01T19:32:43.609Z
 tags: 
 editor: markdown
 dateCreated: 2024-09-27T19:52:14.031Z

@@ -2,13 +2,13 @@
 title: pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-02T15:29:31.264Z
+date: 2024-10-02T16:33:49.260Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
 ---
 
-## Windows 11 - Inventaire pilotes manquants
+## Windows 11 - Inventaire des pilotes manquants
 Liste des pilotes manquant sous Windows 11 23h2
 
 > <button id="downloadCSV">Export table to CSV</button> :floppy_disk:

@@ -2,13 +2,17 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-02T16:57:51.085Z
+date: 2024-10-02T16:58:59.999Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
 ---
 
 ## Windows 11 - Déploiement de drivers via GPO
+
+> EN COURS DE DEVELOPPEMENT
+{.is-danger}
+
 Un [script powershell](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy_drivers.ps1) a été écrit afin de factiliter le déploiement des pilotes manquants sur certains modèles d'ordinateurs compatibles. 
 > Sur ces modèles, la carte ethernet a été vérifié fonctionnelle avec une installation par défault de Windows 11
 {.is-info}

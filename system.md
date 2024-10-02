@@ -2,7 +2,7 @@
 title: system
 description: 
 published: true
-date: 2024-10-02T15:20:02.363Z
+date: 2024-10-02T15:31:52.491Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-01T19:46:05.901Z
@@ -10,7 +10,7 @@ dateCreated: 2024-10-01T19:46:05.901Z
 
 ## Serveurs Windows
 
-[![windows-logo.png](/serveurs/windows-logo.png)](/system/windows/home_windows)
+[![windows-logo.png](/serveurs/windows-logo.png)](/system/windows)
 
 ## Serveurs Linux
 

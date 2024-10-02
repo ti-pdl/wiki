@@ -2,7 +2,7 @@
 title: system
 description: 
 published: true
-date: 2024-10-02T15:18:58.566Z
+date: 2024-10-02T15:20:02.363Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-01T19:46:05.901Z
@@ -14,4 +14,4 @@ dateCreated: 2024-10-01T19:46:05.901Z
 
 ## Serveurs Linux
 
-[![linux-logo.png](/serveurs/linux-logo.png)](/system/linux/home_linux)
+[![linux-logo.png](/serveurs/linux-logo.png)](/system/linux)

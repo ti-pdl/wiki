@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-02T18:33:03.906Z
+date: 2024-10-02T18:33:18.863Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -33,7 +33,7 @@ Les avantages:
 - Mise à jour simplifiée (pas de master à refaire)
 - Stabilité: les pilotes (compressés) sont d'abord téléchargés puis installés (pas de perte de réseau lors de l'installation d'un pilote comme certains éléments du chipset par exemple) 
 
-# Mise en place
+### Mise en place
 
 
 ## Windows 11 - Inventaire des pilotes manquants

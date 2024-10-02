@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-02T16:55:50.078Z
+date: 2024-10-02T16:57:51.085Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -19,7 +19,7 @@ Le script fonctionne de la manière suivante:
   - Téléchargement de tous les pilotes de la base de donnée
 - Execution du script sur le client via GPO
   - Mappage d'un lecteur réseau contenant la [base de donnée des pilotes](https://github.com/ti-pdl/wiki/blob/master/system/windows/masters/pilotes.md)
-  
+  - Téléchargement (depuis le lecteur réseau mappé) et installation du pilote si le modèle correspond et que celui-ci n'est pas encore installé
 
 ## Windows 11 - Inventaire des pilotes manquants
 Liste des pilotes manquant sous Windows 11 23h2

@@ -1,8 +1,8 @@
 ---
-title: home_system
+title: system
 description: 
 published: true
-date: 2024-10-01T20:24:38.707Z
+date: 2024-10-02T15:18:58.566Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-01T19:46:05.901Z

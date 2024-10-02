@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-02T17:11:21.402Z
+date: 2024-10-02T17:14:58.526Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -27,8 +27,10 @@ Le script fonctionne de la manière suivante:
   
 Les avantages:
 - Réduction très importante de la taille du master (drivers packs...)
-- Installation des pilotes nécessaires uniquement*
+- Installation des pilotes nécessaires uniquement
 - Fichiers compressés (gain de temps, de bande passante)
+- Base de donnée "clean" (pas de pilotes en double)
+- Stable: les pilotes (compressés) sont d'abord téléchargés puis installés (pas de perte de réseau lors de l'installation d'un pilote comme le chipset par exemple) 
 
 ## Windows 11 - Inventaire des pilotes manquants
 Liste des pilotes manquant sous Windows 11 23h2

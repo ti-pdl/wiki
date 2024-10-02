@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-02T16:58:59.999Z
+date: 2024-10-02T17:01:32.406Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -15,7 +15,7 @@ dateCreated: 2024-09-27T11:56:14.383Z
 
 Un [script powershell](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy_drivers.ps1) a été écrit afin de factiliter le déploiement des pilotes manquants sur certains modèles d'ordinateurs compatibles. 
 > Sur ces modèles, la carte ethernet a été vérifié fonctionnelle avec une installation par défault de Windows 11
-{.is-info}
+{.is-success}
 
 Le script fonctionne de la manière suivante:
 - Exécution du script sur le serveur avec le paramètre `-int_db`

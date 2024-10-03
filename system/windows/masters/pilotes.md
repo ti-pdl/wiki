@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-03T07:32:18.671Z
+date: 2024-10-03T07:33:50.962Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -31,7 +31,11 @@ Les avantages:
 - Fichiers compressés (gain de temps, de bande passante)
 - Base de donnée "clean" (pas de pilotes en double)
 - Mise à jour simplifiée (pas de master à refaire)
-- Stabilité: les pilotes (compressés) sont d'abord téléchargés puis installés (pas de perte de réseau lors de l'installation d'un pilote comme certains éléments du chipset par exemple) 
+- Stabilité: les pilotes (compressés) sont d'abord téléchargés puis installés (pas de perte de réseau lors de l'installation d'un pilote comme certains éléments du chipset par exemple)
+
+Tips:
+- Trouver le "nom" du pilote via l'instance de périphérique
+  - `Get-PnpDeviceProperty -InstanceId "PCI\VEN_8086&DEV_1911&SUBSYS_09A81028&REV_00\3&11583659&0&40" -KeyName DEVPKEY_Device_Manufacturer, DEVPKEY_Device_Class, DEVPKEY_Device_DriverVers`
 
 ## Windows 11 - Inventaire des pilotes manquants
 Liste des pilotes manquant sous Windows 11 23h2

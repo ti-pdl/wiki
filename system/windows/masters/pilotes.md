@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-03T15:28:35.328Z
+date: 2024-10-03T15:31:43.090Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -27,7 +27,7 @@ Un [script powershell](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy
 
 ### Fonctionnement du script
 - Exécution du script sur le serveur avec le paramètre `-init`
-  - Téléchargement de la [base de donnée des pilotes](#base-de-donne-s-des-pilotes)
+  - Téléchargement de la [base de donnée des pilotes](#base-de-donnes-des-pilotes)
   - Téléchargement de tous les pilotes de la base de donnée
 - Execution du script sur le client via GPO
   - Mappage d'un lecteur réseau contenant la [base de donnée des pilotes](#base-de-donnees-des-pilotes) (et les pilotes précédemment téléchargés)

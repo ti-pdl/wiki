@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-03T15:44:58.291Z
+date: 2024-10-03T15:55:31.972Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -40,7 +40,8 @@ Un [script powershell](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy
 - Télécharger le script [deploy_drivers.ps1](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy_drivers.ps1) et le placer sur un serveur du domaine dans un dossier qui sera partagé
 - Lancer le script avec l'option `-init` afin de télécharger la [base de donnée](#base-de-données-des-pilotes) et les pilotes sur le serveur:
   - `.\deploy_drivers.ps1 -init`
-> 
+> Si le téléchargement n'est pas possible sur le serveur (proxy, etc), exécutez le script depuis un autre poste puis copiez les fichiers `deploy_drivers.ps1`, `pilotes.md` et le dossier `drivers` sur le serveur.<br>
+![files_to_copy_to_server.png](/media/system/windows/masters/pilotes/files_to_copy_to_server.png)
 {.is-warning}
 
 

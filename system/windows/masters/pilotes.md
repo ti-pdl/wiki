@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-03T15:32:47.868Z
+date: 2024-10-03T15:43:03.368Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -18,6 +18,7 @@ Un [script powershell](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy
 {.is-success}
   
 ### Les avantages
+
 - Réduction très importante de la taille du master (drivers packs...)
 - Installation des pilotes nécessaires uniquement
 - Fichiers compressés (gain de temps, de bande passante)
@@ -26,6 +27,7 @@ Un [script powershell](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy
 - Stabilité: les pilotes (compressés) sont d'abord téléchargés puis installés (pas de perte de réseau lors de l'installation d'un pilote comme certains éléments du chipset par exemple)
 
 ### Fonctionnement du script
+
 - Exécution du script sur le serveur avec le paramètre `-init`
   - Téléchargement de la [base de donnée des pilotes](#base-de-données-des-pilotes)
   - Téléchargement de tous les pilotes de la base de donnée
@@ -35,7 +37,9 @@ Un [script powershell](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy
   
 ### Mise en place
 
-
+- Télécharger le script [deploy_drivers.ps1](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy_drivers.ps1) et le placer sur un serveur du domaine dans un dossier qui sera partagé
+- Lancer le script avec l'option `-init` afin de télécharger la [base de donnée](#base-de-données-des-pilotes) et les pilotes sur le serveur:
+  - `.\deploy_drivers.ps1 -init`
 
 ## Windows 11 - Inventaire des pilotes manquants
 Liste des pilotes manquant sous Windows 11 (23h2)

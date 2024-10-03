@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-03T16:05:48.539Z
+date: 2024-10-03T16:07:44.927Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -42,7 +42,12 @@ Un [script powershell](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy
   - `.\deploy_drivers.ps1 -init`
 > Si le téléchargement n'est pas possible sur le serveur (proxy, etc), exécuter le script depuis un autre poste puis copier les fichiers `deploy_drivers.ps1`, `pilotes.md` et le dossier `drivers` sur le serveur.
 {.is-warning}
+- Créer un compte sur le domaine pour le partage du dossier
+TODO
 - Partager le dossier sur le serveur pour le rendre accessible depuis une GPO ordinateur
+TODO
+- Créer une GPO ordinateur pour l'exécution du script
+TODO
 
 ## Windows 11 - Inventaire des pilotes manquants
 Liste des pilotes manquant sous Windows 11 (23h2)

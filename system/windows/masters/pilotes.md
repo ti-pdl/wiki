@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-03T15:19:15.085Z
+date: 2024-10-03T15:19:42.761Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -34,7 +34,7 @@ Un [script powershell](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy
   - Téléchargement (depuis le lecteur réseau mappé) et installation du pilote si le modèle correspond et que celui-ci n'est pas encore installé
 
 ### Tips
-- Trouver le "nom" du pilote (`Manufacturer - Class - DriverVersion`) via l'instance de périphérique:
+- Trouver le "nom" (DRIVER) du pilote (`Manufacturer - Class - DriverVersion`) via l'instance de périphérique:
 `Get-PnpDeviceProperty -InstanceId "PCI\VEN_10DE&DEV_2560&SUBSYS_3A8117AA&REV_A1\4&2CAE475F&0&0009" -KeyName DEVPKEY_Device_Manufacturer, DEVPKEY_Device_Class, DEVPKEY_Device_DriverVersion`
 
 ## Windows 11 - Inventaire des pilotes manquants

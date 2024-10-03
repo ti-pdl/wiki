@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-03T16:07:44.927Z
+date: 2024-10-03T16:09:28.840Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -47,7 +47,7 @@ TODO
 - Partager le dossier sur le serveur pour le rendre accessible depuis une GPO ordinateur
 TODO
 - Créer une GPO ordinateur pour l'exécution du script
-TODO
+TODO: paramêtres du script: `-srv_path=\\srv-xyz\drivers -srv_username=toto -srv_password=toto`
 
 ## Windows 11 - Inventaire des pilotes manquants
 Liste des pilotes manquant sous Windows 11 (23h2)

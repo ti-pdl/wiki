@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-03T15:21:42.032Z
+date: 2024-10-03T15:21:46.657Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -40,7 +40,7 @@ Liste des pilotes manquant sous Windows 11 (23h2)
 - Trouver le "nom" (`DRIVER`) d'un pilote (`Manufacturer - Class - DriverVersion`) via l'instance de périphérique:
 `Get-PnpDeviceProperty -InstanceId "PCI\VEN_10DE&DEV_2560&SUBSYS_3A8117AA&REV_A1\4&2CAE475F&0&0009" -KeyName DEVPKEY_Device_Manufacturer, DEVPKEY_Device_Class, DEVPKEY_Device_DriverVersion`
 
-### Tableeau des pilotes
+### Tableau des pilotes
 
 > <button id="downloadCSV">Export table to CSV</button> :floppy_disk:
 {.is-info}

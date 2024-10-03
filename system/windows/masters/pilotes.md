@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-03T15:26:05.378Z
+date: 2024-10-03T15:27:28.915Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -27,10 +27,10 @@ Un [script powershell](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy
 
 ### Fonctionnement du script
 - Exécution du script sur le serveur avec le paramètre `-init`
-  - Téléchargement de la [base de donnée des pilotes](#tableau-des-pilotes)
+  - Téléchargement de la [base de donnée des pilotes](#base-de-donnees-des-pilotes)
   - Téléchargement de tous les pilotes de la base de donnée
 - Execution du script sur le client via GPO
-  - Mappage d'un lecteur réseau contenant la [base de donnée des pilotes](#tableau-des-pilotes) (et les pilotes précédemment téléchargés)
+  - Mappage d'un lecteur réseau contenant la [base de donnée des pilotes](#base-de-donnees-des-pilotes) (et les pilotes précédemment téléchargés)
   - Téléchargement (depuis le lecteur réseau mappé) et installation du pilote si le modèle correspond et que celui-ci n'est pas encore installé
 
 ## Windows 11 - Inventaire des pilotes manquants
@@ -40,7 +40,7 @@ Liste des pilotes manquant sous Windows 11 (23h2)
 - Trouver le "nom" (`DRIVER`) d'un pilote (`Manufacturer - Class - DriverVersion`) via l'instance de périphérique:
 `Get-PnpDeviceProperty -InstanceId "PCI\VEN_10DE&DEV_2560&SUBSYS_3A8117AA&REV_A1\4&2CAE475F&0&0009" -KeyName DEVPKEY_Device_Manufacturer, DEVPKEY_Device_Class, DEVPKEY_Device_DriverVersion`
 
-### Tableau des pilotes
+### Base de données des pilotes
 
 > <button id="downloadCSV">Export table to CSV</button> :floppy_disk:
 {.is-info}

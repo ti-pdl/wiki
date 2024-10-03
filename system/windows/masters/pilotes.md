@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-03T16:09:28.840Z
+date: 2024-10-03T16:10:00.417Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -20,9 +20,8 @@ Un [script powershell](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy
 ### Les avantages
 
 - Réduction très importante de la taille du master (drivers packs...)
-- Installation des pilotes nécessaires uniquement
+- Installation des pilotes nécessaires uniquement (pas de pilotes en double)
 - Fichiers compressés (gain de temps, de bande passante)
-- Base de donnée "clean" (pas de pilotes en double)
 - Mise à jour simplifiée (pas de master à refaire)
 - Stabilité: les pilotes (compressés) sont d'abord téléchargés puis installés (pas de perte de réseau lors de l'installation d'un pilote comme certains éléments du chipset par exemple)
 

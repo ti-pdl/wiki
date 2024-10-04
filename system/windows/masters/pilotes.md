@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-04T06:57:33.296Z
+date: 2024-10-04T06:58:03.334Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -14,7 +14,7 @@ dateCreated: 2024-09-27T11:56:14.383Z
 {.is-danger}
 
 Un [script PowerShell](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy_drivers.ps1) a été écrit afin de faciliter le déploiement des pilotes manquants via GPO sur certains modèles d'ordinateurs compatibles. 
-> Sur ces modèles, la carte ethernet a été vérifié fonctionnelle avec une installation par défaut de Windows 11
+> Sur ces modèles, la carte Ethernet a été vérifié fonctionnelle avec une installation par défaut de Windows 11
 {.is-success}
   
 ### Les avantages
@@ -30,7 +30,7 @@ Un [script PowerShell](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy
 - Exécution du script sur le serveur avec le paramètre `-init`
   - Téléchargement de la [base de donnée des pilotes](#base-de-données-des-pilotes)
   - Téléchargement de tous les pilotes de la base de donnée
-- Execution du script sur le client via GPO
+- Exécution du script sur le client via GPO
   - Mappage d'un lecteur réseau contenant la [base de donnée des pilotes](#base-de-données-des-pilotes) (et les pilotes précédemment téléchargés)
   - Téléchargement (depuis le serveur) et installation du pilote si le modèle correspond et que celui-ci n'est pas encore installé
   

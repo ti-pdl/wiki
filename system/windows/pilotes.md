@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-04T18:43:16.784Z
+date: 2024-10-04T18:44:04.583Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -44,7 +44,7 @@ Un [script PowerShell](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy
 > Si le téléchargement n'est pas possible sur le serveur (proxy, etc), exécuter le script depuis un autre poste puis copier les fichiers `deploy_drivers.ps1`, `pilotes.md` et le dossier `drivers` sur le serveur.
 {.is-warning}
 - Créer un compte spécifique sur le domaine pour le partage du dossier sur le serveur
-- Partager le dossier contenant le script en lecture seule sur le serveur pour le rendre accessible depuis une GPO ordinateur
+- Partager le dossier contenant le script (lecture seule) sur le serveur pour le rendre accessible depuis une GPO ordinateur
 - Créer une GPO ordinateur pour l'exécution du script avec les paramètre `srv_path`, `srv_username` et `srv_password`:
 ![gpo.png](/media/system/windows/masters/pilotes/gpo.png)
 

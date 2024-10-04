@@ -1,8 +1,8 @@
 ---
-title: linux
+title: Linux
 description: 
 published: true
-date: 2024-10-04T16:32:03.505Z
+date: 2024-10-04T17:06:27.463Z
 tags: 
 editor: markdown
 dateCreated: 2024-09-27T19:52:14.031Z

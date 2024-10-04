@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-04T21:27:57.467Z
+date: 2024-10-04T21:40:05.209Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -65,11 +65,11 @@ Liste des pilotes manquant sous Windows 11 (23h2)
 > TODO
 {.is-warning}
 
-### Tips
 - Trouver un driver dans le catalogue microsoft via l'instance de périphérique:
   ```
   .\deploy_drivers.ps1 -find "PCI\VEN_10DE&DEV_2560&SUBSYS_3A8117AA&REV_A1\4&2CAE475F&0&0009"
-
+  ```
+  ```
   [2024-10-04 22:57:56] [Info] FindDriver: detected windows version Windows 11 22H2/23H2
   [2024-10-04 22:57:56] [Info] FindDriver: searching on microsoft catalog for device id "PCI\VEN_10DE&DEV_2560&SUBSYS_3A8117AA&REV_A1\4&2CAE475F&0&0009"...
 

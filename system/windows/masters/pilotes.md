@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-04T09:49:51.420Z
+date: 2024-10-04T11:15:48.451Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -47,6 +47,9 @@ Un [script PowerShell](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy
 ![gpo.png](/media/system/windows/masters/pilotes/gpo.png)
 
 > Pour éviter tout problème, par défaut le script ne s'exécute qu'une seule fois sur les postes. Pour forcer l'exécution de celui-ci à chaque démarrage (mise à jours de la base de données par exemple), utiliser le paramètre `-force` 
+{.is-info}
+
+> Par défaut, les logs sont consultables sur le poste déployé à l'emplacement suivant: `C:\deploy_drivers.log`
 {.is-info}
 
 <br>

@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-04T21:40:05.209Z
+date: 2024-10-04T21:41:02.800Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -90,7 +90,7 @@ Liste des pilotes manquant sous Windows 11 (23h2)
 
 ### Base de données des pilotes
 
-> <button id="downloadCSV">Export table to CSV</button> :floppy_disk:
+> <button id="downloadCSV">Exporter la base de donnée en .csv</button> :floppy_disk:
 {.is-info}
 
 | MODEL | NAME | ID | DRIVER | DDL | MIRROR | HQ |

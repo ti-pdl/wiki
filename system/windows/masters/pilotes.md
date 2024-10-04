@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-03T16:32:09.171Z
+date: 2024-10-04T06:37:05.956Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -45,8 +45,10 @@ Un [script powershell](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy
 TODO
 - Partager le dossier sur le serveur pour le rendre accessible depuis une GPO ordinateur
 TODO
-- Créer une GPO ordinateur pour l'exécution du script
-TODO: paramêtres du script: `-srv_path=\\srv-xyz\drivers -srv_username=toto -srv_password=toto`
+- Créer une GPO ordinateur pour l'exécution du script avec les paramêtres `srv_path`, `srv_username` et `srv_password`:
+![gpo.png](/media/system/windows/masters/pilotes/gpo.png)
+
+<br>
 
 ## Windows 11 - Inventaire des pilotes manquants
 Liste des pilotes manquant sous Windows 11 (23h2)
@@ -54,6 +56,8 @@ Liste des pilotes manquant sous Windows 11 (23h2)
 ### Tips
 - Trouver le "nom" (`DRIVER`) d'un pilote (`Manufacturer - Class - DriverVersion`) via l'instance de périphérique:
 `Get-PnpDeviceProperty -InstanceId "PCI\VEN_10DE&DEV_2560&SUBSYS_3A8117AA&REV_A1\4&2CAE475F&0&0009" -KeyName DEVPKEY_Device_Manufacturer, DEVPKEY_Device_Class, DEVPKEY_Device_DriverVersion`
+
+<br>
 
 ### Base de données des pilotes
 

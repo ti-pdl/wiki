@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-04T17:14:59.657Z
+date: 2024-10-04T18:38:59.733Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -17,7 +17,7 @@ Un [script PowerShell](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy
 > Sur ces modèles, la carte Ethernet a été vérifié fonctionnelle avec une installation par défaut de Windows 11
 {.is-success}
 
-> Pour l'instant seules les cartes graphiques `NVIDIA T400`, `Radeon RX550/550 Series` ainsi que `AMD Radeon R7 450` sont supportées. Les autres modèles devront être ajoutés à la [base de donnée des pilotes](#base-de-données-des-pilotes)
+> Pour l'instant, seules les cartes graphiques `NVIDIA T400`, `Radeon RX550/550 Series` ainsi que `AMD Radeon R7 450` sont supportées. Les autres modèles devront être ajoutés à la [base de donnée des pilotes](#base-de-données-des-pilotes)
 {.is-warning}
 
 ### Les avantages
@@ -26,7 +26,7 @@ Un [script PowerShell](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy
 - Installation des pilotes nécessaires uniquement (pas de pilotes en double)
 - Fichiers compressés (gain de temps, de bande passante)
 - Mise à jour simplifiée (pas de master à refaire)
-- Stable: les pilotes (compressés) sont d'abord téléchargés puis installés (pas de perte de réseau lors de l'installation d'un pilote comme certains éléments du chipset par exemple)
+- Les pilotes (compressés) sont d'abord téléchargés puis installés (pas de perte de réseau lors de l'installation d'un pilote comme certains éléments du chipset par exemple)
 
 ### Fonctionnement du script
 
@@ -49,7 +49,7 @@ Un [script PowerShell](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy
 - Créer une GPO ordinateur pour l'exécution du script avec les paramètre `srv_path`, `srv_username` et `srv_password`:
 ![gpo.png](/media/system/windows/masters/pilotes/gpo.png)
 
-> Par défaut **le script ne s'exécute qu'une seule fois sur les postes**. Pour forcer l'exécution de celui-ci à chaque démarrage (mise à jours de la base de données par exemple), utiliser le paramètre `-force` 
+> Par défaut, **le script ne s'exécute qu'une seule fois sur les postes**. Pour forcer l'exécution de celui-ci à chaque démarrage (mise à jours de la base de données par exemple), utiliser le paramètre `-force` 
 {.is-info}
 
 > Par défaut, les logs sont consultables sur le poste déployé à l'emplacement suivant: `C:\deploy_drivers.log`

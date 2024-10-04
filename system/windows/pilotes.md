@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-04T17:08:49.130Z
+date: 2024-10-04T17:14:59.657Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -16,7 +16,10 @@ dateCreated: 2024-09-27T11:56:14.383Z
 Un [script PowerShell](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy_drivers.ps1) a été écrit afin de faciliter le déploiement des pilotes manquants via GPO sur certains modèles d'ordinateurs compatibles. 
 > Sur ces modèles, la carte Ethernet a été vérifié fonctionnelle avec une installation par défaut de Windows 11
 {.is-success}
-  
+
+> Pour l'instant seules les cartes graphiques `NVIDIA T400`, `Radeon RX550/550 Series` ainsi que `AMD Radeon R7 450` sont supportées. Les autres modèles devront être ajoutés à la [base de donnée des pilotes](#base-de-données-des-pilotes)
+{.is-warning}
+
 ### Les avantages
 
 - Réduction très importante de la taille du master (drivers packs...)

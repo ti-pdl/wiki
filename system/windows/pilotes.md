@@ -2,13 +2,13 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-04T15:54:46.639Z
+date: 2024-10-04T15:58:20.515Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
 ---
 
-## Windows 11 - Déploiement de drivers via GPO
+## Windows 11 - Déploiement de pilotes via GPO
 
 > EN COURS DE DEVELOPPEMENT
 {.is-danger}

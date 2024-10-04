@@ -2,7 +2,7 @@
 title: windows
 description: 
 published: true
-date: 2024-10-04T15:51:26.642Z
+date: 2024-10-04T15:53:25.314Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-01T20:09:48.252Z
@@ -14,5 +14,5 @@ dateCreated: 2024-10-01T20:09:48.252Z
 ## :computer: [Création d'un master (TODO)](/system/windows/master-windows-11)
 Création d'un master windows 11
 
-## :hammer_and_wrench: [Gestion des pilotes](/system/windows/masters-pilotes-windows-11)
+## :hammer_and_wrench: [Gestion des pilotes](/system/windows/pilotes-windows-11)
 Windows et les pilotes...

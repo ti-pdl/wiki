@@ -2,11 +2,14 @@
 title: linux
 description: 
 published: true
-date: 2024-10-02T15:30:41.436Z
+date: 2024-10-04T16:31:30.955Z
 tags: 
 editor: markdown
 dateCreated: 2024-09-27T19:52:14.031Z
 ---
+
+> Linux est un système d'exploitation open-source, basé sur Unix, offrant une grande flexibilité, stabilité et sécurité. Utilisé dans divers environnements (serveurs, ordinateurs, systèmes embarqués), il est apprécié pour sa modularité et sa communauté active.
+.{is-info}
 
 # Applications
 <br>

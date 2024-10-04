@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-04T18:39:28.020Z
+date: 2024-10-04T18:39:54.223Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -26,7 +26,6 @@ Un [script PowerShell](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy
 - Installation des pilotes nécessaires uniquement (pas de pilotes en double)
 - Fichiers compressés (gain de temps, de bande passante)
 - Mise à jour simplifiée (pas de master à refaire)
-- Les pilotes (compressés) sont d'abord téléchargés puis installés (pas de perte de réseau lors de l'installation d'un pilote comme certains éléments du chipset par exemple)
 
 ### Fonctionnement du script
 

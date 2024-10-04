@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-04T06:48:50.226Z
+date: 2024-10-04T06:57:33.296Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -13,8 +13,8 @@ dateCreated: 2024-09-27T11:56:14.383Z
 > EN COURS DE DEVELOPPEMENT
 {.is-danger}
 
-Un [script powershell](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy_drivers.ps1) a été écrit afin de factiliter le déploiement des pilotes manquants via GPO sur certains modèles d'ordinateurs compatibles. 
-> Sur ces modèles, la carte ethernet a été vérifié fonctionnelle avec une installation par défault de Windows 11
+Un [script PowerShell](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy_drivers.ps1) a été écrit afin de faciliter le déploiement des pilotes manquants via GPO sur certains modèles d'ordinateurs compatibles. 
+> Sur ces modèles, la carte ethernet a été vérifié fonctionnelle avec une installation par défaut de Windows 11
 {.is-success}
   
 ### Les avantages
@@ -43,8 +43,11 @@ Un [script powershell](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy
 {.is-warning}
 - Créer un compte sur le domaine pour le partage du dossier sur le serveur
 - Partager le dossier sur le serveur pour le rendre accessible depuis une GPO ordinateur
-- Créer une GPO ordinateur pour l'exécution du script avec les paramêtres `srv_path`, `srv_username` et `srv_password`:
+- Créer une GPO ordinateur pour l'exécution du script avec les paramètre `srv_path`, `srv_username` et `srv_password`:
 ![gpo.png](/media/system/windows/masters/pilotes/gpo.png)
+
+> Pour éviter tout problème, par défaut le script ne s'exécute qu'une seule fois sur les postes. Pour forcer l'execution de celui-ci 
+{.is-info}
 
 <br>
 

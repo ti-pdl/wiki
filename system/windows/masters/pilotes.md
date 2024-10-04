@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-04T06:58:03.334Z
+date: 2024-10-04T06:59:27.176Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -46,7 +46,7 @@ Un [script PowerShell](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy
 - Créer une GPO ordinateur pour l'exécution du script avec les paramètre `srv_path`, `srv_username` et `srv_password`:
 ![gpo.png](/media/system/windows/masters/pilotes/gpo.png)
 
-> Pour éviter tout problème, par défaut le script ne s'exécute qu'une seule fois sur les postes. Pour forcer l'execution de celui-ci 
+> Pour éviter tout problème, par défaut le script ne s'exécute qu'une seule fois sur les postes. Pour forcer l'exécution de celui-ci à chaque démarrage (mise à jours de la base de données par exemple), utiliser le paramètre `-force` 
 {.is-info}
 
 <br>

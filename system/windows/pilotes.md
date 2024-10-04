@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-04T18:59:54.999Z
+date: 2024-10-04T19:09:39.388Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -58,6 +58,9 @@ Un [script PowerShell](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy
 
 ## Inventaire des pilotes manquants (W11)
 Liste des pilotes manquant sous Windows 11 (23h2)
+
+### Ajout d'un nouveau modèle
+TODO
 
 ### Tips
 - Trouver le "nom" (`DRIVER`) d'un pilote (`Manufacturer - Class - DriverVersion`) via l'instance de périphérique:

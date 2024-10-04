@@ -1,8 +1,8 @@
 ---
-title: windows
+title: Windows
 description: 
 published: true
-date: 2024-10-04T16:28:28.417Z
+date: 2024-10-04T17:07:14.370Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-01T20:09:48.252Z

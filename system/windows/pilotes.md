@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-05T10:37:50.901Z
+date: 2024-10-05T10:38:14.687Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -71,7 +71,6 @@ Liste des pilotes manquant sous Windows 11 (23h2)
   ```
   ```
   QueryMsCatalog: searching for "PCI\VEN_8086&DEV_461D&SUBSYS_0BD21028" (22H2/23H2)
-  QueryMsCatalog: searching for "PCI\VEN_8086&DEV_461D" (22H2/23H2)
 
   Title          : Intel - System - 1.0.11406.42226
   Products       : Windows 11 Client, version 22H2 and later, Servicing Drivers, Windows 11 Client, version 22H2 and later, Upgrade & Servicing Drivers

@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-04T22:34:39.504Z
+date: 2024-10-05T10:37:50.901Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -67,21 +67,20 @@ Liste des pilotes manquant sous Windows 11 (23h2)
 
 - Trouver un driver dans le catalogue microsoft via l'instance de périphérique:
   ```
-  .\deploy_drivers.ps1 -find "PCI\VEN_10DE&DEV_2560&SUBSYS_3A8117AA&REV_A1\4&2CAE475F&0&0009"
+  .\deploy_drivers.ps1 -find "PCI\VEN_8086&DEV_461D&SUBSYS_0BD21028&REV_05\3&11583659&0&20"
   ```
   ```
-  [2024-10-04 22:57:56] [Info] FindDriver: detected windows version Windows 11 22H2/23H2
-  [2024-10-04 22:57:56] [Info] FindDriver: searching on microsoft catalog for device id "PCI\VEN_10DE&DEV_2560&SUBSYS_3A8117AA&REV_A1\4&2CAE475F&0&0009"...
+  QueryMsCatalog: searching for "PCI\VEN_8086&DEV_461D&SUBSYS_0BD21028" (22H2/23H2)
+  QueryMsCatalog: searching for "PCI\VEN_8086&DEV_461D" (22H2/23H2)
 
-  Title          : NVIDIA - Display - 32.0.15.5613
-  Products       : Windows 11 Client, version 22H2 and later, Servicing Drivers, Windows 11 Client, version 22H2 and later, Upgrade & Servicing Drivers, Windows 11 Client S, version 22H2 and later,        
-                   Servicing Drivers, Windows 11 Client S, version 22H2 and later, Upgrade & Servicing Drivers
-  Classification : Drivers (Video)
-  LastUpdated    : 6/27/2024
-  Size           : 759.3 MB 796146325
-  Link           : https://www.catalog.update.microsoft.com/Search.aspx?q=PCI\VEN_10DE&DEV_2560&SUBSYS_3A8117AA&REV_A1\4&2CAE475F&0&0009
+  Title          : Intel - System - 1.0.11406.42226
+  Products       : Windows 11 Client, version 22H2 and later, Servicing Drivers, Windows 11 Client, version 22H2 and later, Upgrade & Servicing Drivers
+  Classification : Drivers (Other Hardware)
+  LastUpdated    : 1/29/2024
+  Size           : 2.2 MB 2256033
+  Link           : https://www.catalog.update.microsoft.com/Search.aspx?q=PCI%5CVEN_8086%26DEV_461D
   ```
-- Trouver le "Titre" (`DRIVER`) d'un pilote (`Manufacturer - Class - DriverVersion`) via l'instance de périphérique:
+- Trouver le "Title" (`DRIVER`) d'un pilote installé sur un poste (`Manufacturer - Class - DriverVersion`) via l'instance de périphérique:
   ```
   Get-PnpDeviceProperty -InstanceId "PCI\VEN_10DE&DEV_2560&SUBSYS_3A8117AA&REV_A1\4&2CAE475F&0&0009" -KeyName DEVPKEY_Device_Manufacturer, DEVPKEY_Device_Class, DEVPKEY_Device_DriverVersion
   ```

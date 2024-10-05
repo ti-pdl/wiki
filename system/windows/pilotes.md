@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-05T12:23:09.603Z
+date: 2024-10-05T12:39:09.454Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -70,7 +70,7 @@ Liste des pilotes manquant sous Windows 11 (23h2)
   .\deploy_drivers.ps1 -search "PCI\VEN_10DE&DEV_2560&SUBSYS_3A8117AA&REV_A1\4&2CAE475F&0&0009"
   ```
   ```
-  QueryMsCatalog: searching for "PCI\VEN_10DE&DEV_2560&SUBSYS_3A8117AA" (windows 11 22H2/23H2)
+  QueryMsCatalog: searching windows 11 (22H2/23H2) driver for "PCI\VEN_10DE&DEV_2560&SUBSYS_3A8117AA" (NVIDIA GeForce RTX 3060 Laptop GPU)
   QueryMsCatalog: found windows 11 (22H2) driver
 
   Title          : NVIDIA - Display - 31.0.15.4630

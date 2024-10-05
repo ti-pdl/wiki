@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-05T12:20:53.873Z
+date: 2024-10-05T12:22:04.802Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -82,10 +82,6 @@ Liste des pilotes manquant sous Windows 11 (23h2)
 
   Markdown:
   | Legion 5 15ACH6H | NVIDIA GeForce RTX 3060 Laptop GPU | PCI\VEN_10DE&DEV_2560&SUBSYS_3A8117AA&REV_A1\4&2CAE475F&0&0009 | [NVIDIA - Display - 31.0.15.4630](https://www.catalog.update.microsoft.com/Search.aspx?q=PCI%5CVEN_10DE%26DEV_2560%26SUBSYS_3A8117AA) | [:floppy_disk:](TODO) | [:floppy_disk:](TODO) | NON |
-  ```
-- Trouver le "Title" (`DRIVER`) d'un pilote installé sur un poste (`Manufacturer - Class - DriverVersion`) via l'instance de périphérique:
-  ```
-  Get-PnpDeviceProperty -InstanceId "PCI\VEN_10DE&DEV_2560&SUBSYS_3A8117AA&REV_A1\4&2CAE475F&0&0009" -KeyName DEVPKEY_Device_Manufacturer, DEVPKEY_Device_Class, DEVPKEY_Device_DriverVersion
   ```
 
 <br>

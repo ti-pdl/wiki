@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-07T11:09:18.013Z
+date: 2024-10-08T07:19:00.711Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -155,6 +155,6 @@ Liste des pilotes manquant sous Windows 11 (23h2)
 | HP ProDesk 600 G2 SFF | Contrôleur de bus SM | PCI\VEN_8086&DEV_A123&SUBSYS_805D103C&REV_31\3&11583659&0&FC | [INTEL - System - 10.1.1.44](https://catalog.update.microsoft.com/Search.aspx?q=PCI%5CVEN_8086%26DEV_A131) | [:floppy_disk:](https://catalog.s.download.windowsupdate.com/d/msdownload/update/driver/drvs/2020/08/9972fce6-371c-4c3b-9d4c-07b35e1e339a_5c9187451b6c2ff2a499957a8be234c8c115e64e.cab) | [:floppy_disk:](https://files.mydedibox.fr/files/work/wiki/pilotes/9972fce6-371c-4c3b-9d4c-07b35e1e339a_5c9187451b6c2ff2a499957a8be234c8c115e64e.cab) | OUI |
 | HP ProDesk 600 G2 SFF | Contrôleur de mémoire PCI | PCI\VEN_8086&DEV_A121&SUBSYS_805D103C&REV_31\3&11583659&0&FA | [INTEL - System - 10.1.1.44](https://catalog.update.microsoft.com/Search.aspx?q=PCI%5CVEN_8086%26DEV_A131) | [:floppy_disk:](https://catalog.s.download.windowsupdate.com/d/msdownload/update/driver/drvs/2020/08/9972fce6-371c-4c3b-9d4c-07b35e1e339a_5c9187451b6c2ff2a499957a8be234c8c115e64e.cab) | [:floppy_disk:](https://files.mydedibox.fr/files/work/wiki/pilotes/9972fce6-371c-4c3b-9d4c-07b35e1e339a_5c9187451b6c2ff2a499957a8be234c8c115e64e.cab) | OUI |
 | HP ProDesk 600 G2 SFF | Contrôleur PCI de communications simplifiées | PCI\VEN_8086&DEV_A13A&SUBSYS_805D103C&REV_31\3&11583659&0&B0 | [Intel - System - 2406.5.5.0](https://catalog.update.microsoft.com/Search.aspx?q=PCI%5CVEN_8086%26DEV_A13A) | [:floppy_disk:](https://catalog.s.download.windowsupdate.com/c/msdownload/update/driver/drvs/2024/05/6b4eea96-19d1-4e45-8184-b15e69e7d61b_342c6ed92ad70a59065201bacbef8f85fc8413ca.cab) | [:floppy_disk:](https://files.mydedibox.fr/files/work/wiki/pilotes/6b4eea96-19d1-4e45-8184-b15e69e7d61b_342c6ed92ad70a59065201bacbef8f85fc8413ca.cab) | OUI |
-| HP ProDesk 600 G2 SFF | Carte vidéo de base Microsoft (Intel(R) HD Graphics 510) | PCI\VEN_8086&DEV_1902&SUBSYS_805D103C&REV_06\3&11583659&0&10 | [Intel Corporation - Display - 30.0.101.1339](https://catalog.update.microsoft.com/Search.aspx?q=PCI%5CVEN_8086%26DEV_1902%26SUBSYS_805D103C) | [:floppy_disk:](https://catalog.s.download.windowsupdate.com/d/msdownload/update/driver/drvs/2022/07/3ca15f5c-31ae-40a6-8b19-511037e10557_01af5f976dcd09485549203f7ad765ebff5231f8.cab) | [:floppy_disk:](https://files.mydedibox.fr/files/work/wiki/pilotes/3ca15f5c-31ae-40a6-8b19-511037e10557_01af5f976dcd09485549203f7ad765ebff5231f8.cab) | OUI |
+| HP ProDesk 600 G2 SFF | Carte vidéo de base Microsoft (Intel(R) HD Graphics 510) | PCI\VEN_8086&DEV_1902&SUBSYS_805D103C&REV_06\3&11583659&0&10 | [Intel Corporation - Display - 31.0.101.2114](https://catalog.update.microsoft.com/Search.aspx?q=PCI%5CVEN_8086%26DEV_1912%26SUBSYS_07A31028) | [:floppy_disk:](https://catalog.s.download.windowsupdate.com/d/msdownload/update/driver/drvs/2024/06/56b50043-be12-4105-8983-0b428ef78f8e_b11f6386790dc1fdde4a06ead5766329afb31540.cab) | [:floppy_disk:](https://files.mydedibox.fr/files/work/wiki/pilotes/56b50043-be12-4105-8983-0b428ef78f8e_b11f6386790dc1fdde4a06ead5766329afb31540.cab) | OUI |
 {.dense}
 

@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-13T07:53:17.452Z
+date: 2024-10-13T07:57:15.403Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -55,7 +55,7 @@ Un [script](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy_drivers.ps
   ```
   -srv_path "\\srv-xxx\drivers" -srv_username "xxx.local\svc_drivers" -srv_password "xxx"
   ```
-  ![gpo.png](/media/system/windows/masters/pilotes/gpo.png)
+  ![gpo.png](/media/system/windows/pilotes/gpo.png)
 
 > Par défaut, **le [script](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy_drivers.ps1) ne s'exécute qu'une seule fois sur les postes**. Pour forcer l'exécution de celui-ci à chaque démarrage (mise à jours de la [base de donnée](#base-de-données-des-pilotes) sur le serveur par exemple), ajouter le paramètre `-force`
 {.is-info}

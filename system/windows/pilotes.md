@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-13T10:31:27.389Z
+date: 2024-10-13T10:36:08.890Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -107,18 +107,97 @@ Un [script](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy_drivers.ps
   <img src="/media/system/windows/pilotes/todo.png"/>
 </details>
 
-- Examiner les logs
+- Examiner le gestionnaire de périphériques ainsi que les logs
+<details>
+  <summary>Voir les captures d'écran</summary>
+  <img src="/media/system/windows/pilotes/todo.png"/>
+</details>
 <details>
   <summary>Voir les logs</summary>
   
   ```
-  
+[2024-10-13 12:23:15] [Info] GetLocalDrivers: skipping local drivers, directory not found (C:\drivers\OptiPlex 3060)
+[2024-10-13 12:23:15] [Info] MapDrive: mapping \\srv-xxx.xxx.local\Drivers to r:
+[2024-10-13 12:23:15] [Info] MapDrive: checking connexion to srv-xxx.xxx.local
+[2024-10-13 12:23:19] [Info] LoadDriverDb: loading database from r:\pilotes.md
+[2024-10-13 12:23:19] [Info] LoadDriverDb: loaded 61 drivers
+[2024-10-13 12:23:19] [Info] GetDrivers: local_driver_path set to C:\Users\xxx\AppData\Local\Temp\deploy_drivers
+[2024-10-13 12:23:20] [Info] GetDrivers: skipping NVIDIA - Display - 32.0.15.6109 (device not found: PCI\VEN_10DE&DEV_1FF2&SUBSYS_16131028&REV_A1\4&50383AA&0&0008)
+[2024-10-13 12:23:20] [Info] GetDrivers: skipping Advanced Micro Devices, Inc. - Display - 31.0.21912.14 (device not found: PCI\VEN_1002&DEV_699F&SUBSYS_17121028&REV_C7\4&95ED034&0&0008)
+[2024-10-13 12:23:20] [Info] GetDrivers: downloading Advanced Micro Devices, Inc. - Display - 31.0.21912.14 (r:\drivers\whql-amd-software-adrenalin-edition-24.3.1-win10-win11-mar20-vega-polaris.exe)...
+[2024-10-13 12:24:16] [Info] GetDrivers: installing Advanced Micro Devices, Inc. - Display - 31.0.21912.14...
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping Advanced Micro Devices, Inc. - Display - 27.20.20913.2000 (device not found: PCI\VEN_1002&DEV_682B&SUBSYS_10041028&REV_87\4&2A6FB196&0&0008)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping Intel - System - 1.0.11406.42226 (OptiPlex SFF 7010 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping INTEL - System - 10.1.37.7 (OptiPlex SFF 7010 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping Intel - System - 2406.5.5.0 (OptiPlex SFF 7010 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping Intel(R) Corporation - HIDClass - 2.2.2.10 (OptiPlex SFF 7010 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping Intel Corporation - System - 30.100.2417.30 (OptiPlex SFF 7010 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping INTEL - System - 10.1.37.7 (OptiPlex SFF 7010 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping Intel Corporation - System - 3.5.0.1578 (OptiPlex SFF 7010 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping Intel Corporation - Display - 31.0.101.4953 (OptiPlex SFF 7010 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping Intel - System - 1.0.11406.42226 (OptiPlex 3000 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping INTEL - System - 10.1.37.7 (OptiPlex 3000 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping Intel - System - 2406.5.5.0 (OptiPlex 3000 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping Intel Corporation - Display - 31.0.101.4953 (OptiPlex 3000 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping Intel Corporation - System - 30.100.2417.30 (OptiPlex 3000 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping Intel Corporation - Bluetooth - 23.60.5.10 (OptiPlex 3000 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping INTEL - System - 10.1.37.7 (OptiPlex 3000 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping Intel Corporation - System - 3.5.0.1578 (OptiPlex 3000 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping Intel - System - 1.0.11406.42226 (ThinkCentre neo 50s Gen 3 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping INTEL - System - 10.1.37.7 (ThinkCentre neo 50s Gen 3 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping Intel - System - 2406.5.5.0 (ThinkCentre neo 50s Gen 3 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping INTEL - System - 10.1.37.7 (ThinkCentre neo 50s Gen 3 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping INTEL - System - 10.1.37.7 (ThinkCentre neo 50s Gen 3 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping INTEL - System - 10.1.37.7 (ThinkCentre neo 50s Gen 3 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping INTEL - System - 10.1.37.7 (ThinkCentre neo 50s Gen 3 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping INTEL - System - 10.1.37.7 (ThinkCentre neo 50s Gen 3 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping INTEL - System - 10.1.37.7 (ThinkCentre neo 50s Gen 3 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping INTEL - System - 10.1.37.7 (ThinkCentre neo 50s Gen 3 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping INTEL - System - 10.1.37.7 (ThinkCentre neo 50s Gen 3 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping Intel Corporation - System - 3.5.0.1578 (ThinkCentre neo 50s Gen 3 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping Intel Corporation - Display - 31.0.101.4953 (ThinkCentre neo 50s Gen 3 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping INTEL - System - 10.1.33.3 (OptiPlex 3080 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping INTEL - System - 10.1.33.3 (OptiPlex 3080 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping INTEL - System - 10.1.33.3 (OptiPlex 3080 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping Intel - System - 2406.5.5.0 (OptiPlex 3080 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping INTEL - System - 10.1.7.3 (OptiPlex 3080 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping Intel Corporation - Display - 31.0.101.2127 (OptiPlex 3080 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping INTEL - System - 10.1.33.3 (OptiPlex 3070 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping INTEL - System - 10.1.33.3 (OptiPlex 3070 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping Intel - System - 2406.5.5.0 (OptiPlex 3070 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping INTEL - System - 10.1.16.7 (OptiPlex 3070 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping INTEL - System - 10.1.7.3 (OptiPlex 3070 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: skipping Intel Corporation - Display - 31.0.101.2127 (OptiPlex 3070 != OptiPlex 3060)
+[2024-10-13 12:28:09] [Info] GetDrivers: downloading INTEL - System - 10.1.33.3 (r:\drivers\74395ee6-64fc-400a-8c1c-f305545e8e91_ca678480483052caa7f24332acc9ba1c4a368e19.cab)...
+[2024-10-13 12:28:09] [Info] GetDrivers: extracting INTEL - System - 10.1.33.3 from C:\Users\xxx\AppData\Local\Temp\deploy_drivers\74395ee6-64fc-400a-8c1c-f305545e8e91_ca678480483052caa7f24332acc9ba1c4a368e19.cab...
+[2024-10-13 12:28:12] [Info] GetDrivers: skipping INTEL - System - 10.1.33.3 (duplicate driver)...
+[2024-10-13 12:28:12] [Info] GetDrivers: downloading Intel - System - 2406.5.5.0 (r:\drivers\6b4eea96-19d1-4e45-8184-b15e69e7d61b_342c6ed92ad70a59065201bacbef8f85fc8413ca.cab)...
+[2024-10-13 12:28:12] [Info] GetDrivers: extracting Intel - System - 2406.5.5.0 from C:\Users\xxx\AppData\Local\Temp\deploy_drivers\6b4eea96-19d1-4e45-8184-b15e69e7d61b_342c6ed92ad70a59065201bacbef8f85fc8413ca.cab...
+[2024-10-13 12:28:13] [Info] GetDrivers: downloading INTEL - System - 10.1.16.7 (r:\drivers\aba36574-3af7-4c06-9dbf-99f958205e71_34932f041b994a914218407603299b18c0c5ba80.cab)...
+[2024-10-13 12:28:13] [Info] GetDrivers: extracting INTEL - System - 10.1.16.7 from C:\Users\xxx\AppData\Local\Temp\deploy_drivers\aba36574-3af7-4c06-9dbf-99f958205e71_34932f041b994a914218407603299b18c0c5ba80.cab...
+[2024-10-13 12:28:15] [Info] GetDrivers: downloading INTEL - System - 10.1.7.3 (r:\drivers\6205aa6b-12e9-4298-ba23-aa06e5a8ef4d_f3604bed1e4b9176da6f7a045e5a76f46f506be9.cab)...
+[2024-10-13 12:28:15] [Info] GetDrivers: extracting INTEL - System - 10.1.7.3 from C:\Users\xxx\AppData\Local\Temp\deploy_drivers\6205aa6b-12e9-4298-ba23-aa06e5a8ef4d_f3604bed1e4b9176da6f7a045e5a76f46f506be9.cab...
+[2024-10-13 12:28:16] [Info] GetDrivers: downloading Intel Corporation - Display - 31.0.101.2127 (r:\drivers\09e28ba3-4673-4e30-a6aa-51f0c7db008c_9a95d25c9c842facf7749e414b2ec35338e8de83.cab)...
+[2024-10-13 12:28:44] [Info] GetDrivers: extracting Intel Corporation - Display - 31.0.101.2127 from C:\Users\xxx\AppData\Local\Temp\deploy_drivers\09e28ba3-4673-4e30-a6aa-51f0c7db008c_9a95d25c9c842facf7749e414b2ec35338e8de83.cab...
+[2024-10-13 12:29:18] [Info] GetDrivers: skipping INTEL - System - 10.1.1.44 (OptiPlex 3050 != OptiPlex 3060)
+[2024-10-13 12:29:18] [Info] GetDrivers: skipping INTEL - System - 10.1.1.44 (OptiPlex 3050 != OptiPlex 3060)
+[2024-10-13 12:29:18] [Info] GetDrivers: skipping INTEL - System - 10.1.1.44 (OptiPlex 3050 != OptiPlex 3060)
+[2024-10-13 12:29:18] [Info] GetDrivers: skipping Intel - System - 2406.5.5.0 (OptiPlex 3050 != OptiPlex 3060)
+[2024-10-13 12:29:18] [Info] GetDrivers: skipping Intel Corporation - Display - 31.0.101.2114 (OptiPlex 3050 != OptiPlex 3060)
+[2024-10-13 12:29:18] [Info] GetDrivers: skipping INTEL - System - 10.1.1.44 (HP ProDesk 600 G2 SFF != OptiPlex 3060)
+[2024-10-13 12:29:18] [Info] GetDrivers: skipping INTEL - System - 10.1.1.44 (HP ProDesk 600 G2 SFF != OptiPlex 3060)
+[2024-10-13 12:29:18] [Info] GetDrivers: skipping INTEL - System - 10.1.1.44 (HP ProDesk 600 G2 SFF != OptiPlex 3060)
+[2024-10-13 12:29:18] [Info] GetDrivers: skipping Intel - System - 2406.5.5.0 (HP ProDesk 600 G2 SFF != OptiPlex 3060)
+[2024-10-13 12:29:18] [Info] GetDrivers: skipping Intel Corporation - Display - 30.0.101.1339 (HP ProDesk 600 G2 SFF != OptiPlex 3060)
+[2024-10-13 12:29:18] [Info] GetDrivers: installing all drivers in C:\Users\xxx\AppData\Local\Temp\deploy_drivers...
+[2024-10-13 12:32:19] [Info] UnMapDrive: unmapping r:
+[2024-10-13 12:32:19] [Info] All done...
   ```
 </details>
 
 - Exécuter le script une seconde fois avec l'option `-force` pour s'assurer que tous les pilotes ont bien étés installés
 <details>
-  <summary>Examiner le gestionnaire de périphériques ainsi que les logs</summary>
+  <summary>Voir les logs</summary>
   
   ```
   

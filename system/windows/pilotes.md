@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-13T07:11:03.872Z
+date: 2024-10-13T07:12:46.462Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -50,7 +50,7 @@ Un [script](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy_drivers.ps
 > Par défaut, **le [script](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy_drivers.ps1) ne s'exécute qu'une seule fois sur les postes**. Pour forcer l'exécution de celui-ci à chaque démarrage (mise à jours de la [base de donnée](#base-de-données-des-pilotes) sur le serveur par exemple), ajouter le paramètre `-force`
 {.is-info}
 
-> Si vous activez le [script](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy_drivers.ps1) pour des postes sur lesquels des drivers plus récent que ceux de la [base de donnée](#base-de-données-des-pilotes) sont déjà installés, **et** que vous utilisez l'option `-force`, une tentative d'installation (téléchargement) des drivers plus anciens de la [base de donnée](#base-de-données-des-pilotes) sera effectuée à chaque exécution de celui-ci.
+> Si le [script](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy_drivers.ps1) est activé pour des postes sur lesquels des drivers plus récent que ceux de la [base de donnée](#base-de-données-des-pilotes) sont déjà installés, **et** que vous utilisez l'option `-force`, une tentative d'installation (téléchargement) des drivers plus anciens de la [base de donnée](#base-de-données-des-pilotes) sera effectuée à chaque exécution de celui-ci.
 {.is-danger}
 
 > Par défaut, les logs sont consultables sur le poste déployé à l'emplacement suivant: `C:\deploy_drivers.log`

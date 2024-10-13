@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-13T07:38:19.074Z
+date: 2024-10-13T07:51:24.737Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -43,8 +43,11 @@ Un [script](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy_drivers.ps
 > Si le téléchargement n'est pas possible sur le serveur (proxy, etc), exécuter le script depuis un autre poste puis copier les fichiers `deploy_drivers.ps1`, `pilotes.md` et le dossier `drivers` sur le serveur.
 {.is-warning}
 - Créer un compte spécifique sur le domaine pour le partage du dossier sur le serveur
+![create-account.png](/media/system/windows/pilotes/create-account.png)
 - Partager le dossier contenant la base de donnée (`pilotes.md`) et le dossier des pilotes précédemment téléchargés (`drivers`) en lecture seule sur le serveur pour le rendre accessible depuis une GPO ordinateur
+![partage2.png](/media/system/windows/pilotes/partage2.png) ![partage1.png](/media/system/windows/pilotes/partage1.png)
 - Copier le script [deploy_drivers.ps1](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy_drivers.ps1) sur le contrôleur du domaine (dossier `netlogon`)
+![netlogon.png](/media/system/windows/pilotes/netlogon.png)
 - Créer une GPO ordinateur pour l'exécution du script avec les paramètre:
   - `srv_path`: dossier partagé contenant `pilotes.md` et `drivers`
   - `srv_username`: nom d'utilisateur du compte créé précédemment

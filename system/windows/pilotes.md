@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-13T10:36:08.890Z
+date: 2024-10-13T10:39:09.470Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -196,13 +196,6 @@ Un [script](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy_drivers.ps
 </details>
 
 - Exécuter le script une seconde fois avec l'option `-force` pour s'assurer que tous les pilotes ont bien étés installés
-<details>
-  <summary>Voir les logs</summary>
-  
-  ```
-  
-  ```
-</details>
 
 ## Inventaire des pilotes manquants (Windows 11)
 

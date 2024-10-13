@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-13T10:23:11.419Z
+date: 2024-10-13T10:26:54.467Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -85,6 +85,7 @@ Un [script](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy_drivers.ps
 <br>
 
 ### Tester le déploiement des pilotes sur un poste
+
 - Déployer une image (sans pilotes additionnels) sur un poste compatible (Fog)
 - Le joindre au domaine (Fog)
 - Se connecter en admin du domaine sur le poste
@@ -101,6 +102,12 @@ Un [script](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy_drivers.ps
 </details>
 
 - Exécuter le script avec les arguments indiqués précédemment lors de la création de la GPO
+<details>
+  <summary>Voir les captures d'écran</summary>
+  <img src="/media/system/windows/pilotes/todo.png"/>
+</details>
+
+- Examiner les logs
 <details>
   <summary>Voir les captures d'écran</summary>
   <img src="/media/system/windows/pilotes/todo.png"/>

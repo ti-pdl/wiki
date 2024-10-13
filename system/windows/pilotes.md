@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-13T07:18:50.943Z
+date: 2024-10-13T07:38:19.074Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -44,8 +44,15 @@ Un [script](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy_drivers.ps
 {.is-warning}
 - Créer un compte spécifique sur le domaine pour le partage du dossier sur le serveur
 - Partager le dossier contenant la base de donnée (`pilotes.md`) et le dossier des pilotes précédemment téléchargés (`drivers`) en lecture seule sur le serveur pour le rendre accessible depuis une GPO ordinateur
-- Créer une GPO ordinateur pour l'exécution du script avec les paramètre `srv_path`, `srv_username` et `srv_password`:
-![gpo.png](/media/system/windows/masters/pilotes/gpo.png)
+- Copier le script [deploy_drivers.ps1](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy_drivers.ps1) sur le contrôleur du domaine (dossier `netlogon`)
+- Créer une GPO ordinateur pour l'exécution du script avec les paramètre:
+  - `srv_path`: dossier partagé contenant `pilotes.md` et `drivers`
+  - `srv_username`: nom d'utilisateur du compte créé précédemment
+  - `srv_password`: mot de passe du compte créé précédemment
+  ```
+  -srv_path "\\srv-xxx\drivers" -srv_username "xxx.local\svc_drivers" -srv_password "xxx"
+  ```
+  ![gpo.png](/media/system/windows/masters/pilotes/gpo.png)
 
 > Par défaut, **le [script](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy_drivers.ps1) ne s'exécute qu'une seule fois sur les postes**. Pour forcer l'exécution de celui-ci à chaque démarrage (mise à jours de la [base de donnée](#base-de-données-des-pilotes) sur le serveur par exemple), ajouter le paramètre `-force`
 {.is-info}

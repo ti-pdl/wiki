@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-13T10:02:07.718Z
+date: 2024-10-13T10:06:24.450Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -92,6 +92,9 @@ Un [script](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy_drivers.ps
   ```
   .\deploy_drivers.ps1 -search "PCI\VEN_10DE&DEV_2560&SUBSYS_3A8117AA&REV_A1\4&2CAE475F&0&0009"
   ```
+<details>
+  <summary>Voir le résultat</summary>
+
   ```
   QueryMsCatalog: searching windows 11 (22H2/23H2) driver for "PCI\VEN_10DE&DEV_2560&SUBSYS_3A8117AA" (NVIDIA GeForce RTX 3060 Laptop GPU)
   QueryMsCatalog: found windows 11 (22H2) driver
@@ -106,6 +109,8 @@ Un [script](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy_drivers.ps
   Markdown:
   | Legion 5 15ACH6H | NVIDIA GeForce RTX 3060 Laptop GPU | PCI\VEN_10DE&DEV_2560&SUBSYS_3A8117AA&REV_A1\4&2CAE475F&0&0009 | [NVIDIA - Display - 31.0.15.4630](https://www.catalog.update.microsoft.com/Search.aspx?q=PCI%5CVEN_10DE%26DEV_2560%26SUBSYS_3A8117AA) | [:floppy_disk:](TODO) | [:floppy_disk:](TODO) | NON |
   ```
+</details>
+
 - Scanner un poste à la recherche de pilotes manquants dans le catalogue microsoft (à exécuter sur le poste en question avec accès au site https://catalog.update.microsoft.com):
   ```
   .\deploy_drivers.ps1 -scan

@@ -2,7 +2,7 @@
 title: Pilotes
 description: Windows et les pilotes...
 published: true
-date: 2024-10-13T10:39:09.470Z
+date: 2024-10-13T10:48:12.037Z
 tags: windows, serveurs, pilotes, drivers
 editor: markdown
 dateCreated: 2024-09-27T11:56:14.383Z
@@ -92,25 +92,25 @@ Un [script](https://github.com/ti-pdl/deploy_drivers/blob/main/deploy_drivers.ps
 - Ouvrir une console powershell ainsi que le gestionnaire de périphériques
 <details>
   <summary>Voir les captures d'écran</summary>
-  <img src="/media/system/windows/pilotes/todo.png"/>
+  <img src="/media/system/windows/pilotes/test-01.png"/>
 </details>
 
 - Se dépacer dans le répertoire partagé des pilotes via **le chemin complet** et non le "partage" (sinon le script ne pourra mapper le partage sur un lecteur)
 <details>
   <summary>Voir les captures d'écran</summary>
-  <img src="/media/system/windows/pilotes/todo.png"/>
+  <img src="/media/system/windows/pilotes/test-02.png"/>
 </details>
 
 - Exécuter le script avec les arguments indiqués précédemment lors de la création de la GPO
 <details>
   <summary>Voir les captures d'écran</summary>
-  <img src="/media/system/windows/pilotes/todo.png"/>
+  <img src="/media/system/windows/pilotes/test-03.png"/>
 </details>
 
 - Examiner le gestionnaire de périphériques ainsi que les logs
 <details>
   <summary>Voir les captures d'écran</summary>
-  <img src="/media/system/windows/pilotes/todo.png"/>
+  <img src="/media/system/windows/pilotes/test-04.png"/>
 </details>
 <details>
   <summary>Voir les logs</summary>

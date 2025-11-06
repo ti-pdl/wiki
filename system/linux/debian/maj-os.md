@@ -2,7 +2,7 @@
 title: Mise à jour debian
 description: 
 published: true
-date: 2025-11-06T11:28:47.000Z
+date: 2025-11-06T13:05:49.085Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-06T10:55:48.015Z

@@ -2,7 +2,7 @@
 title: Mise à jour debian
 description: 
 published: true
-date: 2025-11-06T13:05:49.085Z
+date: 2025-11-06T14:01:26.929Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-06T10:55:48.015Z
@@ -51,6 +51,11 @@ dateCreated: 2025-11-06T10:55:48.015Z
     ```
 
 # sources.list
+- debian 11
+> deb http://deb.debian.org/debian bookworm main contrib non-free-firmware non-free
+> deb http://deb.debian.org/debian bookworm-updates main contrib non-free-firmware non-free
+> deb http://security.debian.org/debian-security bookworm-security main contrib non-free-firmware non-free
+{.is-info}
 - debian 11
 > deb http://deb.debian.org/debian/ bullseye main contrib non-free
 > deb http://deb.debian.org/debian-security/ bullseye-security main contrib non-free

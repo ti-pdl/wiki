@@ -2,7 +2,7 @@
 title: Mise à jour debian
 description: 
 published: true
-date: 2025-11-06T14:01:37.898Z
+date: 2025-11-06T15:00:21.021Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-06T10:55:48.015Z
@@ -70,4 +70,12 @@ dateCreated: 2025-11-06T10:55:48.015Z
 > deb http://archive.debian.org/debian/ stretch main contrib non-free
 > deb http://archive.debian.org/debian/ stretch-proposed-updates main contrib non-free
 > deb http://archive.debian.org/debian-security stretch/updates main contrib non-free
+{.is-info}
+- debian 8 (à tester)
+> deb http://archive.debian.org/debian/ jessie main contrib non-free
+> deb http://archive.debian.org/debian-security jessie/updates main contrib non-free
+{.is-info}
+- debian 7 (à tester)
+> deb http://archive.debian.org/debian/ wheezy main contrib non-free
+> deb http://archive.debian.org/debian-security wheezy/updates main contrib non-free
 {.is-info}

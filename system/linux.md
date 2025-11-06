@@ -2,7 +2,7 @@
 title: Linux
 description: 
 published: true
-date: 2024-10-04T17:06:29.272Z
+date: 2025-11-06T11:30:45.258Z
 tags: 
 editor: markdown
 dateCreated: 2024-09-27T19:52:14.031Z
@@ -26,7 +26,7 @@ dateCreated: 2024-09-27T19:52:14.031Z
 
 ---
 ## <img src="/icon_fog.png" alt="FOG" width="40"> - FOG
-
+- [Debian: mise à jour de la distribution](/system/linux/debian/maj-os)
 <br> 
 
 ---

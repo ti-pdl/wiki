@@ -2,7 +2,7 @@
 title: Mise à jour debian
 description: 
 published: true
-date: 2025-11-06T15:00:21.021Z
+date: 2025-11-07T15:52:41.971Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-06T10:55:48.015Z
@@ -42,7 +42,7 @@ dateCreated: 2025-11-06T10:55:48.015Z
 
 - Effectuer l'upgrade
 	- reboot
-  - remplacer le contenu du fichier `/etc/apt/sources.list` par les sources de la version cible
+  - remplacer le contenu du fichier `/etc/apt/sources.list` par les sources de la version cible (9 > 10, 10 > 11, 11 > 12, ...)
   - procéder à l'upgrade du système en conservant les fichiers de configuration des paquets
     ```
   	sudo apt update

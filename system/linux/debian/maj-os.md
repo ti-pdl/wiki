@@ -2,7 +2,7 @@
 title: Mise à jour debian
 description: 
 published: true
-date: 2025-11-12T13:35:52.144Z
+date: 2025-11-12T13:37:41.634Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-06T10:55:48.015Z
@@ -36,7 +36,7 @@ dateCreated: 2025-11-06T10:55:48.015Z
 	```
   sudo apt update
 	sudo apt install -y debian-archive-keyring
-	sudo apt -y dist-upgrade
+	sudo DEBIAN_FRONTEND=noninteractive apt -o Dpkg::Options::="--force-confold" -y dist-upgrade
 	sudo apt -y autoremove
 	```
 

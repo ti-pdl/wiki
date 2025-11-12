@@ -2,7 +2,7 @@
 title: Mise à jour debian
 description: 
 published: true
-date: 2025-11-12T13:37:41.634Z
+date: 2025-11-12T13:55:31.648Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-06T10:55:48.015Z
@@ -51,6 +51,11 @@ dateCreated: 2025-11-06T10:55:48.015Z
     ```
 
 # sources.list
+- debian 13
+> deb https://deb.debian.org/debian trixie main
+> deb https://deb.debian.org/debian-security trixie-security main
+> deb https://deb.debian.org/debian/ trixie-updates main
+{.is-info}
 - debian 12
 > deb http://deb.debian.org/debian bookworm main contrib non-free-firmware non-free
 > deb http://deb.debian.org/debian bookworm-updates main contrib non-free-firmware non-free

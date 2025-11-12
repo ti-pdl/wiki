@@ -2,7 +2,7 @@
 title: Mise à jour debian
 description: 
 published: true
-date: 2025-11-07T15:52:41.971Z
+date: 2025-11-12T13:35:52.144Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-06T10:55:48.015Z
@@ -34,8 +34,8 @@ dateCreated: 2025-11-06T10:55:48.015Z
 
 - Mettre à jour le système
 	```
+  sudo apt update
 	sudo apt install -y debian-archive-keyring
-	sudo apt update
 	sudo apt -y dist-upgrade
 	sudo apt -y autoremove
 	```

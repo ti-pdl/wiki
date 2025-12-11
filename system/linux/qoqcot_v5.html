@@ -2,7 +2,7 @@
 title: qoqcot
 description: 
 published: true
-date: 2025-12-11T15:40:08.401Z
+date: 2025-12-11T15:42:05.446Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-12-11T13:53:05.500Z
@@ -89,18 +89,14 @@ db :
 exclude : ^(DWM|UMFD)
 
 #########################</code></pre>
+<p>&nbsp;</p>
 <pre><code class="language-plaintext">nano /etc/default/coqd
-
 #Remplacer COQPATH=/usr/local/coq/coq64 par COQPATH=/usr/local/coq/coq.pl</code></pre>
 <p>&nbsp;</p>
-<p>nano /etc/default/coqd</p>
-<p>#Remplacer COQPATH=/usr/local/coq/coq64 par COQPATH=/usr/local/coq/coq.pl</p>
-<p>&nbsp;</p>
-<p>useradd coq</p>
-<p>update-rc.d coqd.sh defaults</p>
+<pre><code class="language-plaintext">useradd coq
+update-rc.d coqd.sh defaults</code></pre>
 <p>&nbsp;</p>
 <p>##Intégration des postes en création des première tables &nbsp;</p>
-<p>nano /var/www/html/pc.csv</p>
-<p>cd /var/www/html/</p>
-<p>php setup.php pc.csv &nbsp;</p>
-<p>&nbsp;</p>
+<pre><code class="language-plaintext">nano /var/www/html/pc.csv
+cd /var/www/html/
+php setup.php pc.csv  </code></pre>

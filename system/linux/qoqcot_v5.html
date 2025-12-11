@@ -2,10 +2,98 @@
 title: qoqcot
 description: 
 published: true
-date: 2025-12-11T13:53:05.500Z
+date: 2025-12-11T15:30:46.579Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-12-11T13:53:05.500Z
 -->
 
-<p>Hello !</p>
+<p>##Installation de PHP7.4 sur debian 12 &nbsp;</p>
+<p>&nbsp;</p>
+<p>apt install -y apt-transport-https lsb-release ca-certificates wget &nbsp;</p>
+<p>wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg</p>
+<p>echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | tee /etc/apt/sources.list.d/php.list &nbsp;</p>
+<p>&nbsp;</p>
+<p>apt update &nbsp;</p>
+<p>apt install php7.4-common php7.4-cli php7.4-mysql php7.4-gd php7.4-ldap php7.4-mbstring php7.4-mcrypt php7.4-xml libapache2-mod-php7.4 &nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>##Installation des autre dépendance + PERL</p>
+<p>apt install apache2 mariadb-server libyaml-tiny-perl libdbd-mysql-perl</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>## Configuration de la date dans PHP</p>
+<p>nano /etc/php/7.4/apache2/php.ini</p>
+<p>&nbsp;</p>
+<p>[Date]</p>
+<p>; Defines the default timezone used by the date functions</p>
+<p>; http://php.net/date.timezone</p>
+<p>date.timezone = "Europe/Paris"</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>##Télécharger et extraire QoQ-CoT</p>
+<p>&nbsp;</p>
+<p>wget https://sourcesup.renater.fr/frs/download.php/file/6336/QoQ-CoT_v5.0_Mac_Bec.tgz</p>
+<p>tar xvf QoQ-CoT_v5.0_Mac_Bec.tgz</p>
+<p>cp -r /root/qoq-cot/src/* /var/www/html/</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>##Configuration du site &nbsp;</p>
+<p>cp /var/www/html/config.php.dist /var/www/html/config.php</p>
+<p>nano /var/www/html/config.php</p>
+<p>#Configurer le fichier</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>##Sécurisation du server SQL &nbsp;</p>
+<p>mariadb-secure-installation</p>
+<p>mysql -u root -p mysql</p>
+<p>alter user 'root'@'localhost' identified by 'PASSWORD ROOT SQL';</p>
+<p>exit</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>##Configuration de la base SQL &nbsp;</p>
+<p>cp /root/qoq-cot/ressources/INSTALL/CREATE_DB_AND_USER_QoQ-CoT.sh /var/www/html/</p>
+<p>cd /var/www/html/</p>
+<p>./CREATE_DB_AND_USER_QoQ-CoT.sh</p>
+<p>#Répondre aux questions</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>mkdir /usr/local/coq</p>
+<p>cp /root/qoq-cot/ressources/poussin-coq/coq/SOURCES/coq.pl &nbsp;/usr/local/coq/</p>
+<p>cp /root/qoq-cot/ressources/poussin-coq/coq/conf/coq.yml &nbsp;/usr/local/coq/</p>
+<p>cp /root/qoq-cot/ressources/poussin-coq/coq/coqd &nbsp;/etc/default/</p>
+<p>cp /root/qoq-cot/ressources/poussin-coq/coq/coqd.sh &nbsp;/etc/init.d/</p>
+<p>nano /usr/local/coq/coq.yml &nbsp;</p>
+<p>#########################</p>
+<p>---</p>
+<p>tea_keys :</p>
+<p># k1, k2, k3 et k4 sont utilisés pour construire la clé de chiffrement 128 bits pour les communications entre le poussin et le coq, ils doivent donc être identiques dans poussin.yml et coq.yml. Pas d'autres contraintes entre k1, k2 k3 et k4 qui peuvent être tous différents, ou non...</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;k1 : 128</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;k2 : 256</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;k3 : 512</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;k4 : 1024</p>
+<p>server :</p>
+<p>port : 6222</p>
+<p>db :</p>
+<p># Les informations suivantes doivent être identiques à celles du fichier config.php, &nbsp;</p>
+<p># où la base QoQ-CoT et son user associée doivent aussi être fournies</p>
+<p>&nbsp;SQL_DBNAME : QoQCoT</p>
+<p>&nbsp;SQL_HOST : localhost</p>
+<p>&nbsp;SQL_PORT : 3306</p>
+<p>&nbsp;SQL_USERNAME : QoQCoT_user</p>
+<p>&nbsp;SQL_PASSWORD : XXXXXXXXXXX</p>
+<p>exclude : ^(DWM|UMFD)</p>
+<p>&nbsp;</p>
+<p>#########################</p>
+<p>&nbsp;</p>
+<p>nano /etc/default/coqd</p>
+<p>#Remplacer COQPATH=/usr/local/coq/coq64 par COQPATH=/usr/local/coq/coq.pl</p>
+<p>&nbsp;</p>
+<p>useradd coq</p>
+<p>update-rc.d coqd.sh defaults</p>
+<p>&nbsp;</p>
+<p>##Intégration des postes en création des première tables &nbsp;</p>
+<p>nano /var/www/html/pc.csv</p>
+<p>cd /var/www/html/</p>
+<p>php setup.php pc.csv &nbsp;</p>
+<p>&nbsp;</p>

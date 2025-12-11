@@ -2,7 +2,7 @@
 title: qoqcot
 description: 
 published: true
-date: 2025-12-11T15:34:19.978Z
+date: 2025-12-11T15:35:25.123Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-12-11T13:53:05.500Z
@@ -26,19 +26,19 @@ apt install php7.4-common php7.4-cli php7.4-mysql php7.4-gd php7.4-ldap php7.4-m
 <p>&nbsp;</p>
 <p>##Télécharger et extraire QoQ-CoT</p>
 <pre><code class="language-plaintext">wget https://sourcesup.renater.fr/frs/download.php/file/6336/QoQ-CoT_v5.0_Mac_Bec.tgz
-
 tar xvf QoQ-CoT_v5.0_Mac_Bec.tgz
-
 cp -r /root/qoq-cot/src/* /var/www/html/
 </code></pre>
 <p>##Configuration du site &nbsp;</p>
 <pre><code class="language-plaintext">cp /var/www/html/config.php.dist /var/www/html/config.php
-
 nano /var/www/html/config.php
-
 #Configurer le fichier</code></pre>
 <p>&nbsp;</p>
 <p>##Sécurisation du server SQL &nbsp;</p>
+<pre><code class="language-plaintext">mariadb-secure-installation
+mysql -u root -p mysql
+	alter user 'root'@'localhost' identified by 'PASSWORD ROOT SQL';
+	exit</code></pre>
 <p>mariadb-secure-installation</p>
 <p>mysql -u root -p mysql</p>
 <p>alter user 'root'@'localhost' identified by 'PASSWORD ROOT SQL';</p>

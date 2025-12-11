@@ -2,7 +2,7 @@
 title: qoqcot
 description: 
 published: true
-date: 2025-12-11T15:31:14.938Z
+date: 2025-12-11T15:33:14.529Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-12-11T13:53:05.500Z
@@ -11,22 +11,14 @@ dateCreated: 2025-12-11T13:53:05.500Z
 <p>##Installation de PHP7.4 sur debian 12 &nbsp;</p>
 <pre><code class="language-plaintext">apt install -y apt-transport-https lsb-release ca-certificates wget  
 wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
-echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | tee /etc/apt/sources.list.d/php.list  </code></pre>
-<p>apt install -y apt-transport-https lsb-release ca-certificates wget &nbsp;</p>
-<p>wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg</p>
-<p>echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | tee /etc/apt/sources.list.d/php.list &nbsp;</p>
-<p>&nbsp;</p>
-<p>apt update &nbsp;</p>
-<p>apt install php7.4-common php7.4-cli php7.4-mysql php7.4-gd php7.4-ldap php7.4-mbstring php7.4-mcrypt php7.4-xml libapache2-mod-php7.4 &nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>##Installation des autre dépendance + PERL</p>
-<p>apt install apache2 mariadb-server libyaml-tiny-perl libdbd-mysql-perl</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | tee /etc/apt/sources.list.d/php.list  
+
+apt update  
+apt install php7.4-common php7.4-cli php7.4-mysql php7.4-gd php7.4-ldap php7.4-mbstring php7.4-mcrypt php7.4-xml libapache2-mod-php7.4  </code></pre>
+<p>##Installation des autres dépendance + PERL</p>
+<pre><code class="language-plaintext">apt install apache2 mariadb-server libyaml-tiny-perl libdbd-mysql-perl</code></pre>
 <p>## Configuration de la date dans PHP</p>
-<p>nano /etc/php/7.4/apache2/php.ini</p>
-<p>&nbsp;</p>
+<pre><code class="language-plaintext">nano /etc/php/7.4/apache2/php.ini</code></pre>
 <p>[Date]</p>
 <p>; Defines the default timezone used by the date functions</p>
 <p>; http://php.net/date.timezone</p>

@@ -2,7 +2,7 @@
 title: qoqcot
 description: 
 published: true
-date: 2025-12-11T15:38:02.356Z
+date: 2025-12-11T15:38:52.407Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-12-11T13:53:05.500Z
@@ -48,27 +48,48 @@ cp /root/qoq-cot/ressources/poussin-coq/coq/SOURCES/coq.pl  /usr/local/coq/
 cp /root/qoq-cot/ressources/poussin-coq/coq/conf/coq.yml  /usr/local/coq/
 cp /root/qoq-cot/ressources/poussin-coq/coq/coqd  /etc/default/
 cp /root/qoq-cot/ressources/poussin-coq/coq/coqd.sh  /etc/init.d/
-nano /usr/local/coq/coq.yml  </code></pre>
-<p>#########################</p>
-<p>---</p>
-<p>tea_keys :</p>
-<p># k1, k2, k3 et k4 sont utilisés pour construire la clé de chiffrement 128 bits pour les communications entre le poussin et le coq, ils doivent donc être identiques dans poussin.yml et coq.yml. Pas d'autres contraintes entre k1, k2 k3 et k4 qui peuvent être tous différents, ou non...</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;k1 : 128</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;k2 : 256</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;k3 : 512</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;k4 : 1024</p>
-<p>server :</p>
-<p>port : 6222</p>
-<p>db :</p>
-<p># Les informations suivantes doivent être identiques à celles du fichier config.php, &nbsp;</p>
-<p># où la base QoQ-CoT et son user associée doivent aussi être fournies</p>
-<p>&nbsp;SQL_DBNAME : QoQCoT</p>
-<p>&nbsp;SQL_HOST : localhost</p>
-<p>&nbsp;SQL_PORT : 3306</p>
-<p>&nbsp;SQL_USERNAME : QoQCoT_user</p>
-<p>&nbsp;SQL_PASSWORD : XXXXXXXXXXX</p>
-<p>exclude : ^(DWM|UMFD)</p>
-<p>#########################</p>
+nano /usr/local/coq/coq.yml
+ 
+#########################
+
+---
+
+tea_keys :
+
+# k1, k2, k3 et k4 sont utilisés pour construire la clé de chiffrement 128 bits pour les communications entre le poussin et le coq, ils doivent donc être identiques dans poussin.yml et coq.yml. Pas d'autres contraintes entre k1, k2 k3 et k4 qui peuvent être tous différents, ou non...
+
+       k1 : 128
+
+       k2 : 256
+
+       k3 : 512
+
+       k4 : 1024
+
+server :
+
+port : 6222
+
+db :
+
+# Les informations suivantes doivent être identiques à celles du fichier config.php,  
+
+# où la base QoQ-CoT et son user associée doivent aussi être fournies
+
+ SQL_DBNAME : QoQCoT
+
+ SQL_HOST : localhost
+
+ SQL_PORT : 3306
+
+ SQL_USERNAME : QoQCoT_user
+
+ SQL_PASSWORD : XXXXXXXXXXX
+
+exclude : ^(DWM|UMFD)
+
+#########################</code></pre>
+<p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>nano /etc/default/coqd</p>
 <p>#Remplacer COQPATH=/usr/local/coq/coq64 par COQPATH=/usr/local/coq/coq.pl</p>

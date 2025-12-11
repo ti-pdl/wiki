@@ -2,7 +2,7 @@
 title: Linux
 description: 
 published: true
-date: 2025-11-06T11:30:45.258Z
+date: 2025-12-11T15:12:45.519Z
 tags: 
 editor: markdown
 dateCreated: 2024-09-27T19:52:14.031Z
@@ -15,8 +15,9 @@ dateCreated: 2024-09-27T19:52:14.031Z
 <br>
 
 ## <img src="/qoqcot/icon_chicken.png" alt="QoQCoT" width="40"> - QoQCoT
-- [Installation QoQCoT v5 Docker](/system/linux/qoqcot_v5_docker)
-- [Installation QoQCoT v5](https://sourcesup.renater.fr/wiki/qoq-cot/installation_v5.0_mac_bec)
+- [Installation QoQCoT v5 - Docker](/system/linux/qoqcot_v5_docker)
+- [Installation QoQCoT v5 - Debian](/system/linux/qoqcot_v5)
+- [Installation QoQCoT v5 - Crappy Wiki](https://sourcesup.renater.fr/wiki/qoq-cot/installation_v5.0_mac_bec)
 <br>
 ---
 

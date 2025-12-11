@@ -2,14 +2,16 @@
 title: qoqcot
 description: 
 published: true
-date: 2025-12-11T15:30:46.579Z
+date: 2025-12-11T15:31:14.938Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-12-11T13:53:05.500Z
 -->
 
 <p>##Installation de PHP7.4 sur debian 12 &nbsp;</p>
-<p>&nbsp;</p>
+<pre><code class="language-plaintext">apt install -y apt-transport-https lsb-release ca-certificates wget  
+wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
+echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | tee /etc/apt/sources.list.d/php.list  </code></pre>
 <p>apt install -y apt-transport-https lsb-release ca-certificates wget &nbsp;</p>
 <p>wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg</p>
 <p>echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | tee /etc/apt/sources.list.d/php.list &nbsp;</p>

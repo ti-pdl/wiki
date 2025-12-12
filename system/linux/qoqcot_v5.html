@@ -2,13 +2,13 @@
 title: qoqcot
 description: 
 published: true
-date: 2025-12-12T07:29:00.954Z
+date: 2025-12-12T07:33:53.713Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-12-11T13:53:05.500Z
 -->
 
-<p>Installation de PHP7.4 sur debian 12 &nbsp;</p>
+<p>Installation de PHP7.4 sur Debian 12 &nbsp;</p>
 <pre><code class="language-plaintext">apt install -y apt-transport-https lsb-release ca-certificates wget  
 wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
 echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | tee /etc/apt/sources.list.d/php.list  
@@ -101,5 +101,6 @@ exclude : ^(DWM|UMFD)
 update-rc.d coqd.sh defaults</code></pre>
 <p><br>##Intégration des postes en création des première tables &nbsp;</p>
 <pre><code class="language-plaintext">nano /var/www/html/pc.csv
+#Insertion de postes sous la forme PC,salle,Groupe,Date-Debut,Date-Fin
 cd /var/www/html/
 php setup.php pc.csv  </code></pre>

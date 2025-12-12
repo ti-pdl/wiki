@@ -2,7 +2,7 @@
 title: qoqcot
 description: 
 published: true
-date: 2025-12-12T13:08:31.785Z
+date: 2025-12-12T13:09:12.908Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-12-11T13:53:05.500Z
@@ -37,6 +37,7 @@ cp -r /root/qoq-cot/src/* /var/www/html/</code></pre>
 nano /var/www/html/config.php
 #Configurer le fichier
 cp /root/qoq-cot/ressources/EXEMPLES_.htaccess/.htaccess_super_basic_web_1.0_example /var/www/html/.htaccess
+
 nano /var/www/html/.htaccess
 
 # Dans ce cas, seuls les usagers "locaux" définis dans le fichier htpasswd auront accès à la QoQ-CoT après authentification basique Apache
@@ -47,7 +48,6 @@ Require valid-user
 
 
 htpasswd /etc/apache2/QoQCoT/.htpasswd ADMIN
-
 
 nano /etc/apache2/QoQCoT/sites-enabled/000-default.conf
 &lt;Directory /var/www/html&gt;

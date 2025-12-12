@@ -2,7 +2,7 @@
 title: qoqcot
 description: 
 published: true
-date: 2025-12-11T15:42:16.224Z
+date: 2025-12-12T07:29:00.954Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-12-11T13:53:05.500Z
@@ -18,12 +18,16 @@ apt install php7.4-common php7.4-cli php7.4-mysql php7.4-gd php7.4-ldap php7.4-m
 <p>Installation des autres dépendance + PERL</p>
 <pre><code class="language-plaintext">apt install apache2 mariadb-server libyaml-tiny-perl libdbd-mysql-perl</code></pre>
 <p>Configuration de la date dans PHP</p>
-<pre><code class="language-plaintext">nano /etc/php/7.4/apache2/php.ini</code></pre>
-<p>[Date]</p>
-<p>; Defines the default timezone used by the date functions</p>
-<p>; http://php.net/date.timezone</p>
-<p>date.timezone = "Europe/Paris"</p>
-<p>&nbsp;</p>
+<pre><code class="language-plaintext">nano /etc/php/7.4/apache2/php.ini
+########################
+[Date]
+
+; Defines the default timezone used by the date functions
+
+; http://php.net/date.timezone
+
+date.timezone = "Europe/Paris"
+#########################</code></pre>
 <p>Télécharger et extraire QoQ-CoT</p>
 <pre><code class="language-plaintext">wget https://sourcesup.renater.fr/frs/download.php/file/6336/QoQ-CoT_v5.0_Mac_Bec.tgz
 tar xvf QoQ-CoT_v5.0_Mac_Bec.tgz
@@ -95,8 +99,7 @@ exclude : ^(DWM|UMFD)
 <p>&nbsp;</p>
 <pre><code class="language-plaintext">useradd coq
 update-rc.d coqd.sh defaults</code></pre>
-<p>&nbsp;</p>
-<p>##Intégration des postes en création des première tables &nbsp;</p>
+<p><br>##Intégration des postes en création des première tables &nbsp;</p>
 <pre><code class="language-plaintext">nano /var/www/html/pc.csv
 cd /var/www/html/
 php setup.php pc.csv  </code></pre>

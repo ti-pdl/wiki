@@ -2,7 +2,7 @@
 title: qoqcot
 description: 
 published: true
-date: 2026-01-19T11:54:58.080Z
+date: 2026-01-19T12:05:19.168Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-12-11T13:53:05.500Z
@@ -14,25 +14,20 @@ dateCreated: 2025-12-11T13:53:05.500Z
 <pre><code class="language-plaintext">apt install apache2 mariadb-server libyaml-tiny-perl libdbd-mysql-perl</code></pre>
 <p>Configuration de la date dans PHP</p>
 <pre><code class="language-plaintext">nano /etc/php/7.4/apache2/php.ini
-########################
-[Date]
 
-; Defines the default timezone used by the date functions
 
-; http://php.net/date.timezone
 
-date.timezone = "Europe/Paris"
-#########################</code></pre>
+#Remplacer ;date.timezone =  par date.timezone = "Europe/Paris"</code></pre>
 <p>Télécharger et extraire QoQ-CoT</p>
 <pre><code class="language-plaintext">wget https://sourcesup.renater.fr/frs/download.php/file/6336/QoQ-CoT_v5.0_Mac_Bec.tgz &amp;&amp; tar xvf QoQ-CoT_v5.0_Mac_Bec.tgz &amp;&amp; cp -r /root/qoq-cot/src/* /var/www/html/</code></pre>
 <p>Configuration du site &nbsp;</p>
 <pre><code class="language-plaintext">rm /var/www/html/index.html
 cp /var/www/html/config.php.dist /var/www/html/config.php
 nano /var/www/html/config.php
-
 #Configurer le fichier
-cp /root/qoq-cot/ressources/EXEMPLES_.htaccess/.htaccess_super_basic_web_1.0_example /var/www/html/.htaccess
 
+
+cp /root/qoq-cot/ressources/EXEMPLES_.htaccess/.htaccess_super_basic_web_1.0_example /var/www/html/.htaccess
 nano /var/www/html/.htaccess
 ########################
 # Dans ce cas, seuls les usagers "locaux" définis dans le fichier htpasswd auront accès à la QoQ-CoT après authentification basique Apache
@@ -60,25 +55,18 @@ mysql -u root -p mysql
 <pre><code class="language-plaintext">MySQL -u root -p MySQL
 USE QoQCoT ;
 
-## Je supprime les anciennes bases. Mais je garde l'historique des logs. ##
+# Je supprime les anciennes bases. Mais je garde l'historique des logs.
 DROP TABLE Admins ;
 DROP TABLE MachinesToSalles ;
 DROP TABLE Salles ;
 DELETE FROM Connexions WHERE Connexions.DateDebut &lt; '2019-12-01' ;
 
 
-
-## Copie de la base sur le nouveau serveur. ##
+# Copie de la base sur le nouveau serveur.
 mysqldump -u root -p QoQCoT &gt; /root/QoQCoT.sql
 scp /root/QoQCoT.sql root@X.X.X.X:/root/QoQCoT.sql</code></pre>
 <p>Maj de la version 4 à 5 de QoQCoT</p>
-<pre><code class="language-plaintext">ALTER TABLE Connexions CHANGE NomMachine NomMachine VARCHAR(64) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,CHANGE NomOs NomOs VARCHAR(32) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,ADD IPMachine VARCHAR(15) NULL AFTER NomMachine,ADD NomVM VARCHAR(64) NULL AFTER JourSemaine, ADD IPVM VARCHAR(15) NULL AFTER NomVM,DROP IdProcess,ADD INDEX(NomMachine);
-</code></pre>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<pre><code class="language-plaintext">ALTER TABLE Connexions CHANGE NomMachine NomMachine VARCHAR(64) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,CHANGE NomOs NomOs VARCHAR(32) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,ADD IPMachine VARCHAR(15) NULL AFTER NomMachine,ADD NomVM VARCHAR(64) NULL AFTER JourSemaine, ADD IPVM VARCHAR(15) NULL AFTER NomVM,DROP IdProcess,ADD INDEX(NomMachine);</code></pre>
 <p>Configuration de la base SQL &nbsp;</p>
 <pre><code class="language-plaintext">cp /root/qoq-cot/ressources/INSTALL/CREATE_DB_AND_USER_QoQ-CoT.sh /var/www/html/
 cd /var/www/html/

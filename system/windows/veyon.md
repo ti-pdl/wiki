@@ -2,7 +2,7 @@
 title: Veyon
 description: Déploiement de Veyon
 published: true
-date: 2026-01-26T14:56:27.663Z
+date: 2026-01-26T15:01:32.234Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-26T14:55:01.177Z

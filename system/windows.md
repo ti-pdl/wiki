@@ -2,7 +2,7 @@
 title: Windows
 description: 
 published: true
-date: 2024-10-04T17:23:04.459Z
+date: 2026-01-26T12:07:51.120Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-01T20:09:48.252Z
@@ -16,3 +16,6 @@ Création d'un master windows 11
 
 ## :hammer_and_wrench: [Gestion des pilotes](/system/windows/pilotes)
 Windows et les pilotes...
+
+## ![veyon-logo.png](/media/veyon-logo.png =32x32) [Déploiement de veyon](/system/windows/veyon)
+Management de salles...

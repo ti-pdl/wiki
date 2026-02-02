@@ -2,7 +2,7 @@
 title: qoqcot
 description: 
 published: true
-date: 2026-01-19T14:00:38.314Z
+date: 2026-02-02T09:55:24.637Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-12-11T13:53:05.500Z
@@ -25,6 +25,47 @@ dateCreated: 2025-12-11T13:53:05.500Z
 cp /var/www/html/config.php.dist /var/www/html/config.php
 nano /var/www/html/config.php
 #Configurer le fichier
+
+&lt;?php
+//Définition des constantes relatives à la base de données : ces informations doivent être identiques
+//à celles du fichier coq.yml, où la base Qoq-CoT et son user associée doivent aussi être fournies
+define('SQL_DBNAME', 'QoqCoT');
+define('SQL_HOST', 'localhost');
+define('SQL_PORT', '3306');
+define('SQL_USERNAME', 'qoqcot');
+define('SQL_PASSWORD', 'aGpR1VhXWYU');
+
+//Jours ouvrés par défaut
+//Jours ouvrés dans la semaine (0 = dimanche, 1 = lundi, ..., 6 = samedi)
+define('JOURS_OUVRES', serialize(array(1, 2, 3, 4, 5)));
+
+//Fenêtre d'observation quotidienne par défaut
+define('HEURE_DEBUT', '08:00');
+define('HEURE_FIN', '18:00');
+
+//Définition de l'url des pages annuaire
+//Remplacer le nom d'usager par la chaine login _LOGIN_ dans l'URL standard d'accès à la page annuaire d'un usager
+//Exemple : http://annuaire.chezvous.fr/showuser.php?uid=_LOGIN_
+define('URL_ANNUAIRE', '&lt;URL_PAGE_ANNUAIRE_DE_UTILISATEUR_LOGIN_&gt;');
+
+//Le premier Admin
+//A l'installation, l'usager décrit ci-dessous bénéficiera du rôle admin (et pourra créer les suivants depuis l'interface)
+define('FIRST_ADMIN', 'ADMIN');
+
+//Sites
+//Déclarer les sites à l'intérieur du tableau. Ex : array('Site1','Site2','Site3')
+//Si un seul site, commenter la ligne qui suit ou laisser vide le tableau : array()
+define('SITES', serialize(array()));
+
+//Pour accélérer le calcul de graphe, il est possible d'utiliser une table contenant seulement
+//les connexions remontant au nombre de jours indiqué dans la variable CONNEXIONS_CACHE
+//Si CONNEXIONS_CACHE est instancié à 0 alors cette table ne sera pas mise en place
+//A chaque fois que la valeur CONNEXIONS_CACHE sera modifiée, il sera nécessaire de relancer
+//la commande php setup.php -C afin de mettre la table à jour
+define('CONNEXIONS_CACHE', 0);
+
+
+
 
 
 cp /root/qoq-cot/ressources/EXEMPLES_.htaccess/.htaccess_super_basic_web_1.0_example /var/www/html/.htaccess

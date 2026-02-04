@@ -2,7 +2,7 @@
 title: qoqcot
 description: 
 published: true
-date: 2026-02-02T10:42:36.316Z
+date: 2026-02-04T15:52:56.708Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-12-11T13:53:05.500Z
@@ -141,7 +141,7 @@ scp /root/QoQCoT.sql root@X.X.X.X:/root/QoQCoT.sql
 mysql -u root -p mysql
 CREATE DATABASE Q0QC0T;
 exit;
-mysqldump -u root -p QoQCoT &lt; /root/QoQCoT.sql</code></pre>
+mysql -u root -p QoQCoT &lt; /root/QoQCoT.sql</code></pre>
 <p>Maj de la version 4 à 5 de QoQCoT</p>
 <pre><code class="language-plaintext">ALTER TABLE Connexions CHANGE NomMachine NomMachine VARCHAR(64) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,CHANGE NomOs NomOs VARCHAR(32) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,ADD IPMachine VARCHAR(15) NULL AFTER NomMachine,ADD NomVM VARCHAR(64) NULL AFTER JourSemaine, ADD IPVM VARCHAR(15) NULL AFTER NomVM,DROP IdProcess,ADD INDEX(NomMachine);</code></pre>
 <p>Configuration de la base SQL &nbsp;</p>

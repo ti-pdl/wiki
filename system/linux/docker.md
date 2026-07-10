@@ -2,7 +2,7 @@
 title: Docker
 description: 
 published: true
-date: 2026-07-10T15:51:29.176Z
+date: 2026-07-10T15:55:24.514Z
 tags: 
 editor: markdown
 dateCreated: 2026-07-10T11:20:42.014Z
@@ -152,11 +152,13 @@ networks:
     -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
 
   # allow portainer proxy only from default bridge network
-	iptables -I DOCKER-USER 2 \
+	sudo iptables -I DOCKER-USER 2 \
   	-p tcp -s 172.17.0.0/24 --dport 9000 -j ACCEPT
-	for port in 22 443; do
+  sudo iptables -I DOCKER-USER 2 \
+  	-p udp -m conntrack --ctorigdstport 69 -j ACCEPT  
+	for port in 21 22 443 111 2049 20048; do
   	sudo iptables -I DOCKER-USER 2 \
-  		-p tcp -m conntrack --ctorigdstport "$port" -j ACCEPT
+			-p tcp -m conntrack --ctorigdstport "$port" -j ACCEPT
 	done
 
   # reject every other new inbound forwarded connection

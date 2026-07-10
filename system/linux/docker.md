@@ -2,7 +2,7 @@
 title: Docker
 description: 
 published: true
-date: 2026-07-10T15:19:17.138Z
+date: 2026-07-10T15:42:05.962Z
 tags: 
 editor: markdown
 dateCreated: 2026-07-10T11:20:42.014Z
@@ -146,15 +146,17 @@ networks:
 
 ## Firewall
 ```
-sudo apt install ufw
-sudo ufw allow 21     # FTP
-sudo ufw allow 22     # SSH
-sudo ufw allow 69/udp # TFTP
-sudo ufw allow 80     # HTTP
-sudo ufw allow 443    # HTTPS
-sudo ufw allow 9443   # PORTAINER
-sudo ufw allow 110    # NFS
-sudo ufw allow 2049   # NFS
-sudo ufw allow 20048  # NFS
-sudo ufw enable
+# permit already-established flows
+sudo iptables -I DOCKER-USER 1 \
+  -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+
+# allow...
+for port in 21 22 69 110 443 2049 20048 9000; do
+  sudo iptables -I DOCKER-USER 2 \
+  -p tcp -m conntrack --ctorigdstport "$port" -j ACCEPT
+done
+
+# reject every other new inbound forwarded connection
+sudo iptables -A DOCKER-USER \
+  -m conntrack --ctstate NEW -j DROP
 ```

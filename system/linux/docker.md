@@ -2,7 +2,7 @@
 title: Docker
 description: 
 published: true
-date: 2026-07-10T13:43:17.259Z
+date: 2026-07-10T14:11:25.755Z
 tags: 
 editor: markdown
 dateCreated: 2026-07-10T11:20:42.014Z
@@ -50,6 +50,8 @@ services:
       #- "9001:8080"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
+    extra_hosts: 
+      - host.docker.internal:172.17.0.1
 
 networks:
   traefik:

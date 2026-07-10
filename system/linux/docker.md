@@ -2,7 +2,7 @@
 title: Docker
 description: 
 published: true
-date: 2026-07-10T14:29:18.884Z
+date: 2026-07-10T15:08:17.355Z
 tags: 
 editor: markdown
 dateCreated: 2026-07-10T11:20:42.014Z
@@ -16,6 +16,10 @@ dateCreated: 2026-07-10T11:20:42.014Z
 	- https://docs.docker.com/engine/install/debian/
 - Install portainer
 	- https://docs.portainer.io/start/install-ce/server/docker/linux
+  ```
+	docker volume create portainer_data
+  docker run -d -p 9000:9000 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:lts
+  ```
 
 ## Traefik (eeverse proxy)
 
@@ -113,6 +117,33 @@ services:
 
 volumes:
   database:
+```
+
+## Portainer traefik proxy
+```yaml
+services:
+  portainer-proxy:
+    container_name: portainer-proxy
+    image: "marcnuri/port-forward"
+    restart: always
+    environment:
+      - REMOTE_HOST=192.168.0.6
+      - REMOTE_PORT=9000
+    networks:
+      - traefik
+    expose:
+      - 80
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.portainer.rule=Host(`portainer.srv-docker.home)"
+      - "traefik.http.services.portainer.loadbalancer.server.port=80"
+      - "traefik.http.routers.portainer.entrypoints=websecure"
+      - "traefik.http.routers.portainer.tls=true"
+      - "traefik.http.routers.portainer.service=portainer"
+
+networks:
+  traefik:
+    external: true
 ```
 
 ## Firewall

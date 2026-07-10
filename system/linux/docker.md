@@ -2,7 +2,7 @@
 title: Docker
 description: 
 published: true
-date: 2026-07-10T12:35:39.701Z
+date: 2026-07-10T12:47:52.874Z
 tags: 
 editor: markdown
 dateCreated: 2026-07-10T11:20:42.014Z
@@ -48,13 +48,6 @@ services:
       # - "9444:8080"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.traefik.rule=Host(`traefik.srv-docker.home`)"
-      - "traefik.http.services.traefik.loadbalancer.server.port=8080"
-      - "traefik.http.routers.traefik.entrypoints=websecure"
-      - "traefik.http.routers.traefik.tls.certresolver=home"
-      - "traefik.http.routers.traefik.middlewares=authentik@docker"
 
 networks:
   traefik_default:

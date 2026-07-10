@@ -2,7 +2,7 @@
 title: Docker
 description: 
 published: true
-date: 2026-07-10T12:47:52.874Z
+date: 2026-07-10T13:42:07.431Z
 tags: 
 editor: markdown
 dateCreated: 2026-07-10T11:20:42.014Z
@@ -17,7 +17,7 @@ dateCreated: 2026-07-10T11:20:42.014Z
 - Install portainer
 	- https://docs.portainer.io/start/install-ce/server/docker/linux
 
-## Reverse proxy container
+## Traefik (eeverse proxy)
 
 ```yaml
 services:
@@ -36,20 +36,22 @@ services:
       - "--providers.docker"
       - "--providers.docker.exposedbydefault=false"
       - "--entryPoints.web.address=:80"
+      - "--entryPoints.web.http.redirections.entrypoint.to=websecure"
+      - "--entryPoints.web.http.redirections.entrypoint.scheme=https"
       - "--entryPoints.websecure.address=:443"
     networks:
-      - traefik_default
+      - traefik
     ports:
       # The HTTP port
-      # - "80:80"
+      - "80:80"
       # The HTTPS port
       - "443:443"
       # The Web UI (enabled by --api.insecure=true)
-      # - "9444:8080"
+      #- "9001:8080"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
 
 networks:
-  traefik_default:
+  traefik:
     external: true
 ```

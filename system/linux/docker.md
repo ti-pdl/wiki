@@ -2,7 +2,7 @@
 title: Docker
 description: 
 published: true
-date: 2026-07-10T15:08:17.355Z
+date: 2026-07-10T15:19:17.138Z
 tags: 
 editor: markdown
 dateCreated: 2026-07-10T11:20:42.014Z
@@ -127,15 +127,13 @@ services:
     image: "marcnuri/port-forward"
     restart: always
     environment:
-      - REMOTE_HOST=192.168.0.6
+      - REMOTE_HOST=srv-docker.home
       - REMOTE_PORT=9000
     networks:
       - traefik
-    expose:
-      - 80
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.portainer.rule=Host(`portainer.srv-docker.home)"
+      - "traefik.http.routers.portainer.rule=Host(`portainer.srv-docker.home`)"
       - "traefik.http.services.portainer.loadbalancer.server.port=80"
       - "traefik.http.routers.portainer.entrypoints=websecure"
       - "traefik.http.routers.portainer.tls=true"

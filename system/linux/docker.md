@@ -2,7 +2,7 @@
 title: Docker
 description: 
 published: true
-date: 2026-07-10T13:42:07.431Z
+date: 2026-07-10T13:43:17.259Z
 tags: 
 editor: markdown
 dateCreated: 2026-07-10T11:20:42.014Z
@@ -50,6 +50,27 @@ services:
       #- "9001:8080"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
+
+networks:
+  traefik:
+    external: true
+```
+
+## Nginx traefik test
+
+```yaml
+services:
+  nginx:
+    image: nginx:latest
+    networks:
+      - traefik
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.nginx.rule=Host(`nginx.srv-docker.home`)"
+      - "traefik.http.services.nginx.loadbalancer.server.port=80"
+      - "traefik.http.routers.nginx.entrypoints=websecure"
+      - "traefik.http.routers.nginx.tls=true"
+      - "traefik.http.routers.nginx.service=nginx"
 
 networks:
   traefik:

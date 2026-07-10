@@ -2,7 +2,7 @@
 title: Docker
 description: 
 published: true
-date: 2026-07-10T15:42:05.962Z
+date: 2026-07-10T15:49:17.510Z
 tags: 
 editor: markdown
 dateCreated: 2026-07-10T11:20:42.014Z
@@ -145,18 +145,29 @@ networks:
 ```
 
 ## Firewall
-```
-# permit already-established flows
-sudo iptables -I DOCKER-USER 1 \
-  -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+- Add rules
+  ```
+  # permit already-established flows
+  sudo iptables -I DOCKER-USER 1 \
+    -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
 
-# allow...
-for port in 21 22 69 110 443 2049 20048 9000; do
-  sudo iptables -I DOCKER-USER 2 \
-  -p tcp -m conntrack --ctorigdstport "$port" -j ACCEPT
-done
+  # allow portainer proxy only from default bridge network
+	iptables -I DOCKER-USER 2 \
+  	-p tcp -s 172.17.0.0/24 --dport 9000 -j ACCEPT
+	for port in 22 443; do
+  	sudo iptables -I DOCKER-USER 2 \
+  		-p tcp -m conntrack --ctorigdstport "$port" -j ACCEPT
+	done
 
-# reject every other new inbound forwarded connection
-sudo iptables -A DOCKER-USER \
-  -m conntrack --ctstate NEW -j DROP
-```
+  # reject every other new inbound forwarded connection
+  sudo iptables -A DOCKER-USER \
+    -m conntrack --ctstate NEW -j DROP
+  ```
+- List rules
+	```
+	sudo iptables -L DOCKER-USER -n -v --line-numbers
+	```
+- Delete rules
+	```
+	sudo iptables -D DOCKER-USER x
+	```

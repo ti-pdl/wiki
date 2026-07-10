@@ -2,7 +2,7 @@
 title: Docker
 description: 
 published: true
-date: 2026-07-10T14:12:28.886Z
+date: 2026-07-10T14:17:57.405Z
 tags: 
 editor: markdown
 dateCreated: 2026-07-10T11:20:42.014Z
@@ -113,4 +113,19 @@ services:
 
 volumes:
   database:
+```
+
+## Firewall
+```
+sudo apt install ufw
+sudo ufw allow 21     # FTP
+sudo ufw allow 22     # SSH
+sudo ufw allow 69/udp # TFTP
+sudo ufw allow 80     # HTTP
+sudo ufw allow 443    # HTTPS
+sudo ufw allow 9443   # PORTAINER
+sudo ufw allow 110    # NFS
+sudo ufw allow 2049   # NFS
+sudo ufw allow 20048  # NFS
+sudo ufw enable
 ```

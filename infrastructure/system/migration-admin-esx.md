@@ -2,7 +2,7 @@
 title: Migration Admin ESX
 description: 
 published: true
-date: 2026-10-01T12:41:15.893Z
+date: 2026-10-01T12:46:06.483Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-01T12:41:15.893Z
@@ -80,6 +80,8 @@ int po2
 switchport trunk allowed vlan add 205
 ```
 
+> Ne pas toucher aux deux interfaces / vmnic de management pour l'instant, sinon perte de connexion avec l'hôte (esx)
+{.is-warning}
 
 
 #### 3 - Migration du VMkernel de management
